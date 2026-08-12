@@ -2,8 +2,8 @@
   <div>
     <div class="top">
       <div class="container">
-        <span>Enterprise Logistics Operating Platform</span>
-        <strong>Secure infrastructure · API ready · Support 24/7</strong>
+        <span>Platform Operasional Logistik Perusahaan</span>
+        <strong>Infrastruktur aman · Siap API · Dukungan 24/7</strong>
       </div>
     </div>
 
@@ -11,19 +11,19 @@
       <div class="container">
         <a href="#home" class="logo">
           <span class="logo-mark">◆</span>
-          <span><b>LOGISTIQ</b><small>Logistics Operating Platform</small></span>
+          <span><b>LOGISTIQ</b><small>Platform Operasional Logistik</small></span>
         </a>
         <button class="hamb" @click="toggleNav">☰</button>
         <nav class="links" id="links" :style="{ display: navOpen ? 'flex' : '' }">
-          <a href="#product">Product</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#product">Produk</a>
+          <a href="#features">Fitur</a>
+          <a href="#pricing">Harga</a>
+          <a href="#about">Tentang</a>
+          <a href="#contact">Kontak</a>
         </nav>
         <div class="nav-buttons">
-          <button class="btn outline" @click="$emit('open-login')">Sign in</button>
-          <button class="btn blue" @click="scrollToId('contact')">Book a demo →</button>
+          <button class="btn outline" @click="$emit('open-login')">Masuk</button>
+          <button class="btn blue" @click="scrollToId('contact')">Jadwalkan Demo →</button>
         </div>
       </div>
     </header>

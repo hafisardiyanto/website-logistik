@@ -2,61 +2,61 @@
   <section class="section" id="product">
     <div class="container">
       <div class="head center reveal">
-        <span class="kicker">One operating system</span>
-        <h2>Everything your logistics operation needs, connected.</h2>
+        <span class="kicker">Satu sistem operasi</span>
+        <h2>Semua yang diperlukan oleh operasi logistik Anda, saling terhubung.</h2>
         <p>
-          Stop switching between spreadsheets, chats and disconnected tools.
-          LOGISTIQ brings the operational workflow into one consistent
-          experience.
+          Berhenti bolak-balik antara spreadsheet, chat, dan alat yang terpisah-pisah.
+          LOGISTIQ menyatukan alur kerja operasional ke dalam satu
+          pengalaman yang konsisten.
         </p>
       </div>
       <div class="features" id="features">
         <div class="feature reveal">
           <div class="icon">⌁</div>
-          <h3>Job Order Management</h3>
+          <h3>Manajemen Pesanan (Job Order)</h3>
           <p>
-            Capture customer requests and turn them into structured Job
-            Orders with complete operational context.
+            Rekam permintaan pelanggan dan jadikan sebagai Pesanan
+            terstruktur dengan konteks operasional yang lengkap.
           </p>
         </div>
         <div class="feature reveal delay1">
           <div class="icon">▣</div>
-          <h3>Delivery Order</h3>
+          <h3>Surat Jalan (Delivery Order)</h3>
           <p>
-            Manage destinations, goods, pickup and service requirements from
-            a single workspace.
+            Kelola rute, tujuan pengiriman barang, pengambilan, dan kebutuhan perjalan
+            dari satu ruang kerja.
           </p>
         </div>
         <div class="feature reveal delay2">
           <div class="icon">◈</div>
-          <h3>Manifest & Packing List</h3>
+          <h3>Manifes & Daftar Kemas</h3>
           <p>
-            Group shipments into accurate manifests before the vehicle
-            leaves.
+            Kelompokkan daftar pengiriman Anda ke dalam manifes yang akurat
+            sebelum kendaraan logistik berangkat.
           </p>
         </div>
         <div class="feature reveal">
           <div class="icon">◉</div>
-          <h3>Fleet & Driver</h3>
+          <h3>Armada & Pengemudi</h3>
           <p>
-            Assign vehicles and drivers while keeping capacity and status
-            visible.
+            Atur dan pasangkan kendaraan dan pengemudinya dengan
+            pengawasan visibilitas yang baik untuk kapasitas maupun status armada.
           </p>
         </div>
         <div class="feature reveal delay1">
           <div class="icon">⌖</div>
-          <h3>Live Tracking</h3>
+          <h3>Lacak Secara Langsung</h3>
           <p>
-            Give operations teams a clear view of delivery progress and
-            exceptions.
+            Memberikan tim operasi pandangan jernih terhadap progres pengiriman
+            serta pengecualian di lapangan.
           </p>
         </div>
         <div class="feature reveal delay2">
           <div class="icon">◒</div>
-          <h3>Cost & Billing</h3>
+          <h3>Biaya & Penagihan</h3>
           <p>
-            Connect tariffs, costs and invoice workflows to the shipment
-            that created them.
+            Hubungkan tarif, uang jalan, biaya, dan alur tagihan secara utuh
+            ke dalam pengiriman bersangkutan.
           </p>
         </div>
       </div>

@@ -4,29 +4,29 @@
       <div>
         <a class="logo" href="#home">
           <span class="logo-mark">◆</span>
-          <span><b style="color: white">LOGISTIQ</b><small>Logistics Operating Platform</small></span>
+          <span><b style="color: white">LOGISTIQ</b><small>Platform Operasional Logistik</small></span>
         </a>
-        <p>Connected logistics operations for modern businesses.</p>
+        <p>Operasi logistik yang saling terhubung kokoh untuk kemajuan bisnis modern.</p>
       </div>
       <div>
-        <h4>Product</h4>
-        <a href="#features">Features</a><a href="#dashboard">Dashboard</a>
-        <a href="#pricing">Pricing</a><a href="#workflow">How it works</a>
+        <h4>Produk</h4>
+        <a href="#features">Fitur</a><a href="#dashboard">Dasbor Manajemen</a>
+        <a href="#pricing">Harga</a><a href="#workflow">Cara Kerjanya</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="#about">About</a><a href="#contact">Contact</a>
-        <a href="#">Security</a><a href="#">API</a>
+        <h4>Perusahaan</h4>
+        <a href="#about">Tentang Kami</a><a href="#contact">Kontak CS</a>
+        <a href="#">Privasi & Keamanan</a><a href="#">Dokumentasi API</a>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Informasi Kontak Pusat</h4>
         <p>hello@logistiq.co</p>
         <p>+62 811-1234-5678</p>
-        <p>Surabaya, Indonesia</p>
+        <p>Gedung Logistik, Surabaya, Indonesia</p>
       </div>
     </div>
     <div class="container copyright">
-      © 2026 LOGISTIQ · Privacy · Terms · Security
+      © 2026 LOGISTIQ · Privasi Pengguna · Syarat Ketentuan Layanan · Keamanan Siber
     </div>
   </footer>
 </template>

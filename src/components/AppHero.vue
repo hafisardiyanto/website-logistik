@@ -2,47 +2,46 @@
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="reveal">
-        <span class="pill">✦ Built for modern logistics teams</span>
-        <h1>Run logistics <span>without the operational chaos.</span></h1>
+        <span class="pill">✦ Dibuat untuk tim logistik modern</span>
+        <h1>Jalankan logistik <span>tanpa kekacauan operasional.</span></h1>
         <p>
-          LOGISTIQ connects orders, delivery operations, fleet, drivers,
-          costs and billing into one intelligent operating platform — giving
-          your team one source of truth from request to delivery.
+          LOGISTIQ menghubungkan pesanan, operasi pengiriman, armada, pengemudi,
+          biaya, dan penagihan ke dalam satu platform operasi cerdas — memberikan
+          tim Anda satu sumber kebenaran dari permintaan hingga pengiriman.
         </p>
         <div class="actions">
           <button class="btn blue" @click="scrollToId('contact')">
-            Book a personalized demo →
+            Jadwalkan demo khusus →
           </button>
-          <a class="btn dark" href="#product">Explore platform</a>
+          <a class="btn dark" href="#product">Jelajahi platform</a>
         </div>
         <div class="hero-note">
-          No credit card required · Guided product walkthrough ·
-          Enterprise-ready
+          Tanpa kartu kredit · Panduan lengkap product · Cocok untuk Perusahaan Besar
         </div>
       </div>
       <div class="visual reveal delay2">
         <div class="orb"></div>
         <div class="app">
           <div class="app-head">
-            <b>LOGISTIQ</b><span>Operations Overview</span><i>● ● ●</i>
+            <b>LOGISTIQ</b><span>Ringkasan Operasi</span><i>● ● ●</i>
           </div>
           <div class="app-body">
             <div class="app-side">
-              <b>LOGISTIQ</b><span>Dashboard</span><span>Job Orders</span>
-              <span>Delivery</span><span>Manifest</span><span>Fleet</span>
-              <span>Drivers</span><span>Finance</span>
+              <b>LOGISTIQ</b><span>Dasbor</span><span>Pesanan</span>
+              <span>Pengiriman</span><span>Manifes</span><span>Armada</span>
+              <span>Pengemudi</span><span>Keuangan</span>
             </div>
             <div class="app-main">
-              <h3>Operations Overview</h3>
+              <h3>Ringkasan Operasi</h3>
               <div class="metric-grid">
                 <div class="metric">
-                  <small>Job Orders</small><b>1,248</b>
+                  <small>Pesanan</small><b>1,248</b>
                 </div>
                 <div class="metric">
-                  <small>Deliveries</small><b>872</b>
+                  <small>Pengiriman</small><b>872</b>
                 </div>
-                <div class="metric"><small>On Route</small><b>156</b></div>
-                <div class="metric"><small>Completed</small><b>98</b></div>
+                <div class="metric"><small>Di Perjalanan</small><b>156</b></div>
+                <div class="metric"><small>Selesai</small><b>98</b></div>
               </div>
               <div class="chart">
                 <i style="height: 36%"></i><i style="height: 51%"></i>
@@ -56,7 +55,7 @@
         </div>
         <div class="truck">🚚</div>
         <div class="live">
-          <small>LIVE DELIVERY</small><b>Surabaya → Jakarta</b>
+          <small>PENGIRIMAN LANGSUNG</small><b>Surabaya → Jakarta</b>
           <small>TRK-021 · ETA 18:40</small>
           <div class="progress"><i></i></div>
         </div>

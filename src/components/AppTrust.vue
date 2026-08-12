@@ -1,7 +1,7 @@
 <template>
   <div class="trust">
     <div class="container">
-      <p>Designed for teams that move products at scale</p>
+      <p>Dirancang untuk tim yang memindahkan produk dalam skala besar</p>
       <div class="brandrow">
         <span>LOGITRANS</span>
         <span>MOVECO</span>

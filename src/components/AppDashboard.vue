@@ -2,40 +2,40 @@
   <section class="section dashboard-section" id="dashboard">
     <div class="container dashboard-grid">
       <div class="reveal">
-        <span class="kicker" style="color: #5dd7ff">Your application dashboard</span>
-        <h2>See the business behind every shipment.</h2>
+        <span class="kicker" style="color: #5dd7ff">Dasbor aplikasi Anda</span>
+        <h2>Melihat secara nyata bisnis di balik setiap pengiriman.</h2>
         <p>
-          Monitor Job Order, Delivery Order, Manifest, Fleet, Driver, cost
-          and billing activity from one operational dashboard.
+          Pantau aktivitas Pesanan (Job Order), Surat Jalan (Delivery Order), Manifes, Armada,
+          Pengemudi, biaya pengeluaran, serta tagihan dari satu layar operasional raksasa.
         </p>
         <ul class="checks">
-          <li>Real-time delivery visibility</li>
-          <li>Operational performance analytics</li>
-          <li>Cost and margin visibility</li>
-          <li>Role-based access and audit trail</li>
-          <li>Exportable reports and API-ready architecture</li>
+          <li>Visibilitas pengiriman secara real-time</li>
+          <li>Analitik performa operasional tingkat lanjut</li>
+          <li>Visibilitas biaya operasional dan margin penghasilan</li>
+          <li>Akses berdasarkan peran/tugas (RBAC) dan jejak audit (Log)</li>
+          <li>Laporan yang bisa diekspor & arsitektur yang Siap Terintegrasi API</li>
         </ul>
         <button class="btn blue" @click="scrollToId('contact')">
-          Request dashboard walkthrough →
+          Minta demonstrasi dasbor →
         </button>
       </div>
       <div class="dash-large reveal delay2">
         <div class="dash-top">
-          <b>LOGISTIQ Analytics</b><span>● Live · Updated just now</span>
+          <b>Analitik LOGISTIQ</b><span>● Live · Baru saja diperbarui</span>
         </div>
         <div class="dash-content">
           <div class="dark-metrics">
             <div class="dark-metric">
-              <small>Total Shipments</small><b>12,840</b>
+              <small>Total Kiriman</small><b>12,840</b>
             </div>
             <div class="dark-metric">
-              <small>On-time Rate</small><b>96.8%</b>
+              <small>Tingkat Tepat Waktu</small><b>96.8%</b>
             </div>
             <div class="dark-metric">
-              <small>Active Fleet</small><b>184</b>
+              <small>Armada Aktif</small><b>184</b>
             </div>
             <div class="dark-metric">
-              <small>Open Costs</small><b>Rp 1.2B</b>
+              <small>Biaya Berjalan</small><b>Rp 1.2B</b>
             </div>
           </div>
           <div class="dark-chart">

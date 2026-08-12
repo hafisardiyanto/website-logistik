@@ -3,47 +3,44 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-card reveal">
-          <span class="kicker" style="color: #5dd7ff">About LOGISTIQ</span>
-          <h3>Built around the reality of logistics operations.</h3>
+          <span class="kicker" style="color: #5dd7ff">Tentang LOGISTIQ</span>
+          <h3>Dibangun di atas realita sesungguhnya dari operasi logistik.</h3>
           <p>
-            LOGISTIQ is designed to help transport and distribution teams
-            replace fragmented processes with a connected operational system
-            — without making the daily workflow harder.
+            LOGISTIQ dirancang khusus untuk memandu tim perusahan distribusi transportasi
+            dalam menggantikan cara-cara berantakan dengan suatu sistem operasi yang saling terhubung 
+            — dan kami melakukannya dengan tanpa membuat alur kerja Anda menjadi lebih berat.
           </p>
           <div class="values">
             <div class="value">
-              <b>Visibility</b><span>One source of operational truth.</span>
+              <b>Visibilitas</b><span>Satu sumber data operasional utama yang transparan.</span>
             </div>
             <div class="value">
-              <b>Efficiency</b><span>Less manual work and reconciliation.</span>
+              <b>Efisiensi</b><span>Terbebas secara dramatis dari pekerjaan manual atau rekonsiliasi.</span>
             </div>
             <div class="value">
-              <b>Control</b><span>Clear ownership across every process.</span>
+              <b>Kendali</b><span>Tanggungjawabnya nyata serta sangat bisa diandalkan pada setiap detailnya.</span>
             </div>
             <div class="value">
-              <b>Scale</b><span>Ready for growing operations.</span>
+              <b>Berskala</b><span>Infrastruktur stabil dan siap menemani kapasitas Anda yang makin bertambah!</span>
             </div>
           </div>
         </div>
         <div class="about-copy reveal delay2">
-          <span class="kicker">Our approach</span>
+          <span class="kicker">Pendekatan Kami</span>
           <h2>
-            Technology should simplify operations, not add another layer.
+            Teknologi semestinya membantu Anda menjadi simpel, bukan malah membuat kerumitan baru lagi.
           </h2>
           <p>
-            We focus on practical workflows, clear data and interfaces that
-            help dispatchers, operations teams, finance and management work
-            from the same information.
+            Kami fokus pada kepraktisan alur kerja, data yang jelas, serta sebuah tatap muka perangkat lunak canggih yang membantu pihak manajemen, kru administrasi surat, departemen pendanaan (finance) serta jajaran yang mengawasi gudang dapat berkolaborasi langsung menggunakan informasi yang sama.
           </p>
           <p>
-            From Job Order through Delivery and Billing, every module is
-            connected so teams can move with confidence.
+            Mulai dari Pesanan Pelanggan hingga pada bukti Penagihan dan pelunasannya, modul terhubung ini sangat memastikan tiap armada dan personel bekerja dengan rasa yang lebih mantap.
           </p>
           <div class="stats4">
-            <div class="stat"><b>1</b><span>Connected platform</span></div>
-            <div class="stat"><b>24/7</b><span>Visibility</span></div>
-            <div class="stat"><b>API</b><span>Ready</span></div>
-            <div class="stat"><b>∞</b><span>Scalable</span></div>
+            <div class="stat"><b>1</b><span>Platform Tunggal</span></div>
+            <div class="stat"><b>24/7</b><span>Visibilitas</span></div>
+            <div class="stat"><b>API</b><span>Terbuka (Ready)</span></div>
+            <div class="stat"><b>∞</b><span>Skalabilitas Ekstrem</span></div>
           </div>
         </div>
       </div>

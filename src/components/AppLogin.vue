@@ -2,21 +2,21 @@
   <div class="login-overlay" id="login" :class="{ open: isOpen }" @click.self="$emit('close-login')">
     <div class="login-box">
       <button class="close" @click="$emit('close-login')">×</button>
-      <span class="pill">Secure access</span>
-      <h2>Welcome back.</h2>
-      <p>Sign in to your LOGISTIQ operations workspace.</p>
-      <input type="email" placeholder="Work email" />
-      <input type="password" placeholder="Password" />
+      <span class="pill">Akses Aman</span>
+      <h2>Selamat datang kembali.</h2>
+      <p>Masuk ke dalam area ruang kerja operasional LOGISTIQ Anda.</p>
+      <input type="email" placeholder="Alamat email resmi kerja" />
+      <input type="password" placeholder="Kata sandi" />
       <div class="login-row">
         <label>
-          <input type="checkbox" style="width: auto; margin: 0 5px 0 0" /> Remember me
+          <input type="checkbox" style="width: auto; margin: 0 5px 0 0" /> Ingat kredensial saya
         </label>
-        <a href="#">Forgot password?</a>
+        <a href="#">Lupa kata sandi?</a>
       </div>
-      <button class="btn blue full" @click="$emit('close-login')">Sign in →</button>
-      <div class="login-divider">or</div>
+      <button class="btn blue full" @click="$emit('close-login')">Masuk Menggunakan Sandi →</button>
+      <div class="login-divider">atau alternatif lainnya</div>
       <button class="login-demo" @click="handleDemoRequest">
-        Request demo access
+        Kirim Permintaan Trial Akses
       </button>
     </div>
   </div>

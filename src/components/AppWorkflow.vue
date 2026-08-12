@@ -2,61 +2,61 @@
   <section class="section alt" id="workflow">
     <div class="container">
       <div class="head reveal">
-        <span class="kicker">Simple by design</span>
-        <h2>A clear workflow from request to revenue.</h2>
+        <span class="kicker">Desain Sederhana</span>
+        <h2>Alur kerja yang jelas dari permintaan hingga pendapatan.</h2>
         <p>
-          Every step is connected, so your team can move faster with fewer
-          handoffs and less manual reconciliation.
+          Setiap langkah saling terhubung, sehingga tim Anda dapat bergerak lebih cepat
+          dengan minim perpindahan tangan dan tanpa rekonsiliasi manual.
         </p>
       </div>
       <div class="workflow">
         <div class="flow reveal">
           <span class="flow-num">01</span>
           <div class="flow-icon">👥</div>
-          <h3>Customer Request</h3>
-          <p>Capture shipment requirements.</p>
+          <h3>Permintaan Pelanggan</h3>
+          <p>Mencatat kebutuhan dan syarat logistik.</p>
         </div>
         <div class="flow reveal delay1">
           <span class="flow-num">02</span>
           <div class="flow-icon">📋</div>
-          <h3>Job Order</h3>
-          <p>Turn demand into an operational order.</p>
+          <h3>Pesanan / Job Order</h3>
+          <p>Ubah pesanan menjadi tugas operasional.</p>
         </div>
         <div class="flow reveal delay2">
           <span class="flow-num">03</span>
           <div class="flow-icon">📦</div>
-          <h3>Delivery Order</h3>
-          <p>Define shipment and destination.</p>
+          <h3>Surat Jalan / Delivery Order</h3>
+          <p>Tetapkan barang, pengiriman dan tujuan.</p>
         </div>
         <div class="flow reveal delay3">
           <span class="flow-num">04</span>
           <div class="flow-icon">🚚</div>
-          <h3>Assignment</h3>
-          <p>Assign vehicle and driver.</p>
+          <h3>Penugasan</h3>
+          <p>Tunjuk kendaraan dan pengemudi khusus.</p>
         </div>
         <div class="flow reveal">
           <span class="flow-num">05</span>
           <div class="flow-icon">🧾</div>
-          <h3>Manifest</h3>
-          <p>Prepare shipment grouping.</p>
+          <h3>Manifes</h3>
+          <p>Persiapkan pengelompokan muatan.</p>
         </div>
         <div class="flow reveal delay1">
           <span class="flow-num">06</span>
           <div class="flow-icon">📍</div>
-          <h3>Pickup & Route</h3>
-          <p>Execute and monitor movement.</p>
+          <h3>Penjemputan & Rute</h3>
+          <p>Eksekusi rute dan pantau pergerakan armada.</p>
         </div>
         <div class="flow reveal delay2">
           <span class="flow-num">07</span>
           <div class="flow-icon">✓</div>
-          <h3>Delivery</h3>
-          <p>Complete with proof of delivery.</p>
+          <h3>Selesai & Terkirim</h3>
+          <p>Dokumentasi dengan Bukti Penyerahan (POD).</p>
         </div>
         <div class="flow reveal delay3">
           <span class="flow-num">08</span>
           <div class="flow-icon">₨</div>
-          <h3>Cost & Billing</h3>
-          <p>Close operational and financial cycle.</p>
+          <h3>Biaya & Tagihan</h3>
+          <p>Tutup siklus operasional dan keuangan.</p>
         </div>
       </div>
     </div>

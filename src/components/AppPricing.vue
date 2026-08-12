@@ -2,70 +2,70 @@
   <section class="section" id="pricing">
     <div class="container">
       <div class="head center reveal">
-        <span class="kicker">Pricing</span>
-        <h2>Start simple. Scale when you need to.</h2>
+        <span class="kicker">Harga & Paket Layanan</span>
+        <h2>Mulai dari yang simpel. Kembangkan saat Anda siap.</h2>
         <p>
-          Choose a plan that fits the maturity of your logistics operation.
-          Enterprise plans can be tailored to your workflow.
+          Pilih paket yang paling sesuai dengan tingkat operasional logistik Anda.
+          Untuk paket tingkat Enterprise, semua fitur bisa kami personalisasikan.
         </p>
       </div>
       <div class="pricing-toggle">
         <button class="toggle" :class="{ active: mode === 'monthly' }" @click="mode = 'monthly'">
-          Monthly
+          Bulanan
         </button>
         <button class="toggle" :class="{ active: mode === 'yearly' }" @click="mode = 'yearly'">
-          Yearly · Save 20%
+          Tahunan · Hemat 20%
         </button>
       </div>
       <div class="pricing">
         <div class="price reveal">
-          <h3>Starter</h3>
+          <h3>Pemula (Starter)</h3>
           <p class="desc">
-            For small teams starting to digitize operations.
+            Bagi tim operasional kecil yang baru memulai proses digitalisasi pengiriman.
           </p>
-          <strong>{{ mode === 'yearly' ? 'Rp 799K' : 'Rp 999K' }} <small>/ month</small></strong>
+          <strong>{{ mode === 'yearly' ? 'Rp 799K' : 'Rp 999K' }} <small>/ bulan</small></strong>
           <button class="btn outline price-btn" @click="scrollToId('contact')">
-            Get started
+            Mulai sekarang
           </button>
           <ul>
-            <li>Job Order & Delivery Order</li>
-            <li>Basic dashboard</li>
-            <li>Fleet & Driver master</li>
-            <li>Up to 5 users</li>
-            <li>Email support</li>
+            <li>Catatan Pesanan & Surat Jalan</li>
+            <li>Dasbor Analisis Dasar</li>
+            <li>Data Induk Armada & Pengemudi</li>
+            <li>Akses Maksimal 5 pengguna</li>
+            <li>Dukungan IT via Email</li>
           </ul>
         </div>
         <div class="price featured reveal delay1">
-          <span class="popular">MOST POPULAR</span>
-          <h3>Business</h3>
-          <p class="desc">For growing logistics teams that need control.</p>
-          <strong>{{ mode === 'yearly' ? 'Rp 1.999K' : 'Rp 2.499K' }} <small>/ month</small></strong>
+          <span class="popular">PALING POPULER</span>
+          <h3>Bisnis</h3>
+          <p class="desc">Cocok menampung semua perusahaan logistik yang mulai berkembang pesat.</p>
+          <strong>{{ mode === 'yearly' ? 'Rp 1.999K' : 'Rp 2.499K' }} <small>/ bulan</small></strong>
           <button class="btn blue price-btn" @click="scrollToId('contact')">
-            Book a demo
+            Jadwalkan Demo
           </button>
           <ul>
-            <li>Everything in Starter</li>
-            <li>Manifest & Packing List</li>
-            <li>Tracking & operational analytics</li>
-            <li>Cost & billing workflow</li>
-            <li>Up to 25 users</li>
+            <li>Seluruh fitur paket Pemula</li>
+            <li>Manifes & Daftar Kemasan Logistik (PL)</li>
+            <li>Pelacakan Langsung & analitik</li>
+            <li>Alur kerja Biaya & Tagihan</li>
+            <li>Akses Maksimal 25 pengguna</li>
           </ul>
         </div>
         <div class="price reveal delay2">
-          <h3>Enterprise</h3>
+          <h3>Perusahaan Besar (Enterprise)</h3>
           <p class="desc">
-            For complex operations and multiple business units.
+            Didedikasikan untuk rantai pasok dengan kerumitan sangat tinggi dan multi-unit.
           </p>
-          <strong>Custom</strong>
+          <strong>Nego / Kustom</strong>
           <button class="btn dark price-btn" @click="scrollToId('contact')">
-            Talk to sales
+            Hubungi Bagian Penjualan
           </button>
           <ul>
-            <li>Everything in Business</li>
-            <li>Multi-branch & advanced RBAC</li>
-            <li>API & system integration</li>
-            <li>Custom workflow</li>
-            <li>Dedicated support</li>
+            <li>Seluruh fitur paket Bisnis</li>
+            <li>Beragam Cabang & Otoritas RBAC Tingkat Tinggi</li>
+            <li>Dukungan Integrasi ke API Sistem Lain</li>
+            <li>Alur kerja operasional terkustomisasi</li>
+            <li>Dukungan Prioritas (Priority Support)</li>
           </ul>
         </div>
       </div>

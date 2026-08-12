@@ -2,11 +2,11 @@
   <section class="cta">
     <div class="container">
       <div class="cta-box reveal">
-        <span class="pill">Ready to modernize?</span>
-        <h2>Make logistics a competitive advantage.</h2>
+        <span class="pill">Siap untuk transisi menuju modernisasi?</span>
+        <h2>Jadikan logistik sebagai keunggulan kompetitif.</h2>
         <p>
-          See how LOGISTIQ connects your operational workflow and gives your
-          team more control.
+          Uji sendiri bagaimana kuatnya framework LOGISTIQ dalam menghubungkan alur kerja
+          operasi Anda yang terkesan rumit dan serahkan kendali penuh ke arah yang lebih efisien!
         </p>
         <div class="actions">
           <button
@@ -14,13 +14,13 @@
             style="background: #fff; color: #1261d7"
             @click="scrollToId('contact')"
           >
-            Book a demo →
+            Jadwalkan Percobaan (Demo) →
           </button>
           <a
             href="#pricing"
             class="btn"
             style="color: white; border: 1px solid #ffffff55"
-          >View pricing</a>
+          >Lihat paket kami</a>
         </div>
       </div>
     </div>
