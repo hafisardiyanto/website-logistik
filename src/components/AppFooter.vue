@@ -17,20 +17,20 @@
       
       <div class="foot-links">
         <b>Product</b>
-        <a href="#">Dashboard</a>
-        <a href="#">Job Order</a>
-        <a href="#">Delivery Order</a>
-        <a href="#">Manifest</a>
-        <a href="#">Tracking</a>
+        <a href="#product">Dashboard</a>
+        <a href="#product">Job Order</a>
+        <a href="#product">Delivery Order</a>
+        <a href="#product">Manifest</a>
+        <a href="#product">Tracking</a>
         <a href="#pricing">Pricing</a>
       </div>
       
       <div class="foot-links">
         <b>Solutions</b>
-        <a href="#">Trucking</a>
-        <a href="#">3PL</a>
-        <a href="#">Distribution</a>
-        <a href="#">Warehouse</a>
+        <a href="#solusi">Trucking</a>
+        <a href="#solusi">3PL</a>
+        <a href="#solusi">Distribution</a>
+        <a href="#solusi">Warehouse</a>
       </div>
       
       <div class="foot-links">
