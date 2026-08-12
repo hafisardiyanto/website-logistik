@@ -61,11 +61,11 @@ const scrollToId = (id) => {
   border-bottom: 1px solid transparent;
 }
 .nav.is-scrolled {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(10, 30, 60, 0.06);
-  border-bottom: 1px solid rgba(220, 230, 240, 0.6);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(220, 230, 240, 0.5);
 }
 .nav .container {
   height: 78px;

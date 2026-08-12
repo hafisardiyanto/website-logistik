@@ -12,8 +12,8 @@
           <button class="btn blue btn-lg cta-btn shadow" @click="scrollToId('contact')">
             Jadwalkan Demo
           </button>
-          <a class="btn outline btn-lg cta-btn btn-secondary" href="#workflow">
-            Lihat Cara Kerja ↓
+          <a class="btn outline btn-lg cta-btn btn-secondary" href="#product">
+            Lihat Produk →
           </a>
         </div>
       </div>
@@ -157,8 +157,10 @@ onMounted(() => {
 .hero p { font-size: 20px; line-height: 1.8; color: var(--muted); max-width: 500px; }
 .btn-lg { padding: 16px 32px; font-size: 18px; }
 .cta-btn { border-radius: 99px; font-weight: 800; display: inline-block;}
-.btn.shadow { box-shadow: 0 15px 30px #1768e833; }
-.btn-secondary:hover { background: #fdfdfe; border-color: #d8e5f2; color: var(--blue); }
+.btn.shadow { box-shadow: 0 15px 30px #1768e833; transition: all 0.2s ease; }
+.btn.shadow:hover { transform: translateY(-2px); box-shadow: 0 18px 35px #1768e844; }
+.btn-secondary { transition: all 0.2s ease; }
+.btn-secondary:hover { background: #fdfdfe; border-color: #d8e5f2; color: var(--blue); transform: translateY(-2px); }
 .actions { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 35px; }
 
 /* Dashboard */

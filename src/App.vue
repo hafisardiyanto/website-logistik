@@ -21,6 +21,8 @@ import AppFooter from './components/AppFooter.vue'
 import AppLogin from './components/AppLogin.vue'
 
 const showLogin = ref(false)
+const scrollPercent = ref(0)
+
 
 watch(showLogin, (val) => {
   if (val) {
@@ -43,10 +45,18 @@ onMounted(() => {
       .querySelectorAll(".reveal")
       .forEach((el) => observer.observe(el));
   }, 100);
+
+  const updateScroll = () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (height > 0) scrollPercent.value = (winScroll / height) * 100;
+  };
+  window.addEventListener('scroll', updateScroll);
 })
 </script>
 
 <template>
+  <div class="scroll-progress" :style="{ width: scrollPercent + '%' }"></div>
   <AppHeader @open-login="showLogin = true" />
   <main>
     <AppHero />
@@ -69,3 +79,13 @@ onMounted(() => {
   <AppFooter />
   <AppLogin :is-open="showLogin" @close-login="showLogin = false" />
 </template>
+
+<style>
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0; height: 2px;
+  background: var(--blue);
+  z-index: 10000;
+  transition: width 0.1s ease-out;
+}
+</style>
