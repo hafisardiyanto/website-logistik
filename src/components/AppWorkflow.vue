@@ -1,122 +1,178 @@
 <template>
-  <section class="section alt" id="workflow">
+  <section class="section workflow-stage" id="workflow">
     <div class="container">
-      <div class="head reveal">
-        <span class="kicker">Desain Sederhana</span>
-        <h2>Alur kerja yang jelas dari permintaan hingga pendapatan.</h2>
-        <p>
-          Setiap langkah saling terhubung, sehingga tim Anda dapat bergerak lebih cepat
-          dengan minim perpindahan tangan dan tanpa rekonsiliasi manual.
-        </p>
+      <div class="head center reveal">
+        <span class="kicker">Workflow Terintegrasi</span>
+        <h2>Skema alur kerja logistik terstruktur.</h2>
       </div>
-      <div class="workflow">
-        <div class="flow reveal">
-          <span class="flow-num">01</span>
-          <div class="flow-icon">👥</div>
-          <h3>Permintaan Pelanggan</h3>
-          <p>Mencatat kebutuhan dan syarat logistik.</p>
+
+      <div class="workflow-container reveal delay1">
+        <div class="flow-steps">
+          <button 
+            v-for="(step, index) in steps" 
+            :key="index"
+            class="step-btn"
+            :class="{ active: activeStep === index }"
+            @click="activeStep = index"
+          >
+            <div class="step-num">{{ index + 1 }}</div>
+            <span>{{ step.title }}</span>
+          </button>
         </div>
-        <div class="flow reveal delay1">
-          <span class="flow-num">02</span>
-          <div class="flow-icon">📋</div>
-          <h3>Pesanan / Job Order</h3>
-          <p>Ubah pesanan menjadi tugas operasional.</p>
-        </div>
-        <div class="flow reveal delay2">
-          <span class="flow-num">03</span>
-          <div class="flow-icon">📦</div>
-          <h3>Surat Jalan / Delivery Order</h3>
-          <p>Tetapkan barang, pengiriman dan tujuan.</p>
-        </div>
-        <div class="flow reveal delay3">
-          <span class="flow-num">04</span>
-          <div class="flow-icon">🚚</div>
-          <h3>Penugasan</h3>
-          <p>Tunjuk kendaraan dan pengemudi khusus.</p>
-        </div>
-        <div class="flow reveal">
-          <span class="flow-num">05</span>
-          <div class="flow-icon">🧾</div>
-          <h3>Manifes</h3>
-          <p>Persiapkan pengelompokan muatan.</p>
-        </div>
-        <div class="flow reveal delay1">
-          <span class="flow-num">06</span>
-          <div class="flow-icon">📍</div>
-          <h3>Penjemputan & Rute</h3>
-          <p>Eksekusi rute dan pantau pergerakan armada.</p>
-        </div>
-        <div class="flow reveal delay2">
-          <span class="flow-num">07</span>
-          <div class="flow-icon">✓</div>
-          <h3>Selesai & Terkirim</h3>
-          <p>Dokumentasi dengan Bukti Penyerahan (POD).</p>
-        </div>
-        <div class="flow reveal delay3">
-          <span class="flow-num">08</span>
-          <div class="flow-icon">₨</div>
-          <h3>Biaya & Tagihan</h3>
-          <p>Tutup siklus operasional dan keuangan.</p>
+        
+        <div class="flow-content-box">
+          <transition name="fade" mode="out-in">
+            <div :key="activeStep" class="content-anim">
+              <div class="content-icon">{{ steps[activeStep].icon }}</div>
+              <h3>{{ steps[activeStep].title }}</h3>
+              <p>{{ steps[activeStep].desc }}</p>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
   </section>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+
+const activeStep = ref(1)
+
+const steps = [
+  { title: "Order (Request)", icon: "👥", desc: "Sistem menangkap permintaan pelanggan secara otomatis atau manual sebagai titik awal perjalanan logistik." },
+  { title: "Job Order", icon: "📋", desc: "Kelola permintaan pengiriman dan buat pekerjaan operasional secara terstruktur (siapa, ke mana, dan detail kargo)." },
+  { title: "Delivery Order (DO)", icon: "📦", desc: "Perkuat dan petakan armada pengiriman sebelum keberangkatan untuk menjamin kesesuaian kapasitas muatan." },
+  { title: "Manifest", icon: "📑", desc: "Atur kendaraan, driver, rute, dan muatan dalam satu proses pemberangkatan final." },
+  { title: "Shipment Tracking", icon: "📍", desc: "Pantau status pengiriman secara real-time via GPS beserta log update waktu perjalanannya." },
+  { title: "Delivery", icon: "🚚", desc: "Barang sampai ditujuan dengan koordinasi lapangan yang sangat minim hambatan." },
+  { title: "POD (Proof of Delivery)", icon: "✓", desc: "Ambil foto bukti terima dan tanda tangan digital. Dokumen langsung terunggah sinkron ke sistem." },
+  { title: "Invoice & Billing", icon: "₨", desc: "Data final langsung dialirkan ke tim keuangan. Buat tagihan akurat tanpa harus melakukan crosscheck manual lagi." },
+]
+</script>
+
 <style scoped>
-.workflow {
+.workflow-stage {
+  background: #f8fbff;
+  border-bottom: 1px solid var(--line);
+}
+.workflow-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-.flow {
-  padding: 22px;
-  border: 1px solid var(--line);
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
   background: white;
-  border-radius: 13px;
-  position: relative;
+  border: 1px solid #e1e9f4;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 25px 60px #123d7009;
 }
-.flow-num {
-  font-size: 9px;
-  color: var(--blue);
-  font-weight: 800;
+.flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-right: 1px solid #eef2f7;
+  padding-right: 15px;
 }
-.flow-icon {
-  font-size: 27px;
-  margin: 22px 0 13px;
-}
-.flow h3 {
+.step-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 15px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-family: inherit;
   font-size: 13px;
-  margin: 0 0 6px;
+  font-weight: 700;
+  color: #6c7e94;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
 }
-.flow p {
+.step-btn:hover {
+  background: #f4f8fe;
+  color: var(--ink);
+}
+.step-btn.active {
+  background: #e9f2ff;
+  border-color: #c9e0ff;
+  color: var(--blue);
+}
+.step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
   font-size: 10px;
+  background: #e2ecf9;
+  color: #7b91ab;
+}
+.step-btn.active .step-num {
+  background: var(--blue);
+  color: white;
+}
+
+.flow-content-box {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.content-icon {
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+.content-anim h3 {
+  font: 800 28px Manrope;
+  margin: 0 0 15px;
+}
+.content-anim p {
+  font-size: 15px;
+  line-height: 1.8;
   color: var(--muted);
-  line-height: 1.6;
-  margin: 0;
+  max-width: 500px;
 }
-.flow:after {
-  content: "→";
-  position: absolute;
-  right: -18px;
-  top: 45%;
-  color: #9bb0c8;
+
+/* Transitions */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.flow:nth-child(4n):after {
-  display: none;
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 950px) {
-  .workflow {
-    grid-template-columns: repeat(2, 1fr);
+  .workflow-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
-  .flow:after {
-    display: none;
+  .flow-steps {
+    border-right: none;
+    border-bottom: 1px solid #eef2f7;
+    padding-right: 0;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flow-content-box {
+    padding: 20px 0 0;
   }
 }
 @media (max-width: 600px) {
-  .workflow {
+  .flow-steps {
     grid-template-columns: 1fr;
+  }
+  .content-anim h3 {
+    font-size: 24px;
+  }
+  .content-icon {
+    font-size: 45px;
   }
 }
 </style>

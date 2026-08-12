@@ -1,63 +1,50 @@
 <template>
-  <section class="section" id="product">
+  <section class="section" id="features">
     <div class="container">
       <div class="head center reveal">
-        <span class="kicker">Satu sistem operasi</span>
-        <h2>Semua yang diperlukan oleh operasi logistik Anda, saling terhubung.</h2>
-        <p>
-          Berhenti bolak-balik antara spreadsheet, chat, dan alat yang terpisah-pisah.
-          LOGISTIQ menyatukan alur kerja operasional ke dalam satu
-          pengalaman yang konsisten.
-        </p>
+        <span class="kicker">Fitur Fungsional Utama</span>
+        <h2>Kapabilitas menyeluruh untuk semua departemen.</h2>
       </div>
-      <div class="features" id="features">
+      <div class="features">
         <div class="feature reveal">
-          <div class="icon">⌁</div>
-          <h3>Manajemen Pesanan (Job Order)</h3>
-          <p>
-            Rekam permintaan pelanggan dan jadikan sebagai Pesanan
-            terstruktur dengan konteks operasional yang lengkap.
-          </p>
+          <div class="icon">💻</div>
+          <h3>Dashboard</h3>
+          <p>Visibilitas langsung (real-time) tingkat tinggi atas kinerja dan profit operasi harian.</p>
         </div>
         <div class="feature reveal delay1">
-          <div class="icon">▣</div>
-          <h3>Surat Jalan (Delivery Order)</h3>
-          <p>
-            Kelola rute, tujuan pengiriman barang, pengambilan, dan kebutuhan perjalan
-            dari satu ruang kerja.
-          </p>
+          <div class="icon">📋</div>
+          <h3>Job Order</h3>
+          <p>Saring semua permintaan pelanggan menjadi perintah kerja logistik tertata.</p>
         </div>
         <div class="feature reveal delay2">
-          <div class="icon">◈</div>
-          <h3>Manifes & Daftar Kemas</h3>
-          <p>
-            Kelompokkan daftar pengiriman Anda ke dalam manifes yang akurat
-            sebelum kendaraan logistik berangkat.
-          </p>
+          <div class="icon">📦</div>
+          <h3>Delivery Order</h3>
+          <p>Pemrosesan surat jalan beserta persetujuan dokumen pengiriman yang simpel.</p>
+        </div>
+        <div class="feature reveal delay3">
+          <div class="icon">📑</div>
+          <h3>Manifest</h3>
+          <p>Kompilasi daftar pengiriman untuk manajemen alokasi truk yang efisien.</p>
         </div>
         <div class="feature reveal">
-          <div class="icon">◉</div>
-          <h3>Armada & Pengemudi</h3>
-          <p>
-            Atur dan pasangkan kendaraan dan pengemudinya dengan
-            pengawasan visibilitas yang baik untuk kapasitas maupun status armada.
-          </p>
+          <div class="icon">📍</div>
+          <h3>Tracking</h3>
+          <p>Telusuri kordinat kendaraan dan status bongkar muat tepat di lapangan.</p>
         </div>
         <div class="feature reveal delay1">
-          <div class="icon">⌖</div>
-          <h3>Lacak Secara Langsung</h3>
-          <p>
-            Memberikan tim operasi pandangan jernih terhadap progres pengiriman
-            serta pengecualian di lapangan.
-          </p>
+          <div class="icon">💵</div>
+          <h3>Cost (Biaya)</h3>
+          <p>Rekam seluruh klaim operasional, biaya tambahan, uang jalan, hingga pengawalan secara utuh.</p>
         </div>
         <div class="feature reveal delay2">
-          <div class="icon">◒</div>
-          <h3>Biaya & Penagihan</h3>
-          <p>
-            Hubungkan tarif, uang jalan, biaya, dan alur tagihan secara utuh
-            ke dalam pengiriman bersangkutan.
-          </p>
+          <div class="icon">🧾</div>
+          <h3>Invoice</h3>
+          <p>Hasilkan tagihan bersih tanpa perlu re-hitung lagi via sistem penagihan tervalidasi.</p>
+        </div>
+        <div class="feature reveal delay3">
+          <div class="icon">📊</div>
+          <h3>Reporting</h3>
+          <p>Eksport berbagai laporan KPI armada maupun performa cabang dalam 1 kali klik.</p>
         </div>
       </div>
     </div>
@@ -67,8 +54,8 @@
 <style scoped>
 .features {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 .feature {
   padding: 24px;
@@ -79,7 +66,7 @@
 }
 .feature:hover {
   transform: translateY(-5px);
-  box-shadow: 0 22px 45px #123d7010;
+  box-shadow: 0 22px 35px #123d7008;
   border-color: #c7daf4;
 }
 .icon {
@@ -87,17 +74,17 @@
   height: 42px;
   border-radius: 10px;
   background: #edf5ff;
-  color: var(--blue);
   display: grid;
   place-items: center;
-  font-size: 19px;
+  font-size: 21px;
 }
 .feature h3 {
-  font-size: 14px;
+  font-size: 15px;
   margin: 16px 0 7px;
+  font-weight: 800;
 }
 .feature p {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0;

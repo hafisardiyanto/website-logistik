@@ -2,8 +2,8 @@
   <div>
     <div class="top">
       <div class="container">
-        <span>Platform Operasional Logistik Perusahaan</span>
-        <strong>Infrastruktur aman · Siap API · Dukungan 24/7</strong>
+        <span>Sistem Operasi Logistik Enterprise</span>
+        <strong>Aman · Terhubung API · Support 24/7</strong>
       </div>
     </div>
 
@@ -11,19 +11,19 @@
       <div class="container">
         <a href="#home" class="logo">
           <span class="logo-mark">◆</span>
-          <span><b>LOGISTIQ</b><small>Platform Operasional Logistik</small></span>
+          <span><b>LOGISTIQ</b></span>
         </a>
         <button class="hamb" @click="toggleNav">☰</button>
         <nav class="links" id="links" :style="{ display: navOpen ? 'flex' : '' }">
           <a href="#product">Produk</a>
+          <a href="#solusi">Solusi</a>
           <a href="#features">Fitur</a>
           <a href="#pricing">Harga</a>
           <a href="#about">Tentang</a>
-          <a href="#contact">Kontak</a>
         </nav>
         <div class="nav-buttons">
           <button class="btn outline" @click="$emit('open-login')">Masuk</button>
-          <button class="btn blue" @click="scrollToId('contact')">Jadwalkan Demo →</button>
+          <button class="btn blue" @click="scrollToId('contact')">Jadwalkan Demo</button>
         </div>
       </div>
     </header>
@@ -40,7 +40,6 @@ const toggleNav = () => {
 
 const scrollToId = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  // if on mobile close nav
   if (window.innerWidth <= 950) {
     navOpen.value = false;
   }
@@ -93,21 +92,15 @@ const scrollToId = (id) => {
   box-shadow: 0 9px 22px #1768e82e;
 }
 .logo b {
-  font: 800 16px Manrope;
+  font: 800 19px Manrope;
   letter-spacing: -0.5px;
-}
-.logo small {
-  display: block;
-  color: #8492a5;
-  font-size: 8px;
-  margin-top: 2px;
 }
 .links {
   display: flex;
-  gap: 27px;
+  gap: 32px;
   align-items: center;
   color: #43566f;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 .links a:hover {
@@ -115,7 +108,7 @@ const scrollToId = (id) => {
 }
 .nav-buttons {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 .hamb {
   display: none;
