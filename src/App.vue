@@ -13,7 +13,9 @@ import AppProfit from './components/AppProfit.vue'
 import AppDashboard from './components/AppDashboard.vue'
 import AppWhySecurity from './components/AppWhySecurity.vue'
 import AppPricing from './components/AppPricing.vue'
+import AppAbout from './components/AppAbout.vue'
 import AppFaq from './components/AppFaq.vue'
+import AppContact from './components/AppContact.vue'
 import AppCta from './components/AppCta.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppLogin from './components/AppLogin.vue'
@@ -59,7 +61,9 @@ onMounted(() => {
     <AppDashboard />
     <AppWhySecurity />
     <AppPricing />
+    <AppAbout />
     <AppFaq />
+    <AppContact />
     <AppCta />
   </main>
   <AppFooter />
