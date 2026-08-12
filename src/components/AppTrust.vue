@@ -2,13 +2,24 @@
   <div class="trust">
     <div class="container center">
       <div class="reveal">
-        <span class="trust-pill">Built around real logistics workflows.</span>
-        <div class="domains">
-          <span>TRUCKING</span><span class="dot">•</span>
-          <span>3PL</span><span class="dot">•</span>
-          <span>DISTRIBUTION</span><span class="dot">•</span>
-          <span>WAREHOUSE</span><span class="dot">•</span>
-          <span>FREIGHT FORWARDING</span>
+        <span class="trust-pill">Telah dipercaya oleh operasi logistik modern.</span>
+        <div class="metrics">
+          <div class="metric">
+            <b>1,000+</b>
+            <span>Shipment Managed</span>
+          </div>
+          <div class="metric">
+            <b>50+</b>
+            <span>Active Users</span>
+          </div>
+          <div class="metric">
+            <b>98.6%</b>
+            <span>SLA Achievement</span>
+          </div>
+          <div class="metric">
+            <b>24/7</b>
+            <span>Operational Visibility</span>
+          </div>
         </div>
       </div>
     </div>
@@ -18,7 +29,7 @@
 <style scoped>
 .trust {
   border-bottom: 1px solid #edf1f5;
-  padding: 40px 0;
+  padding: 50px 0;
   text-align: center;
   background: #fafcff;
 }
@@ -29,28 +40,40 @@
   color: #798ba0;
   font-weight: 800;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
-.domains {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  color: var(--ink);
-  font-weight: 800;
-  font-size: 17px;
-  letter-spacing: -0.5px;
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.metric b {
   font-family: Manrope;
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 5px;
+  line-height: 1;
 }
-.dot {
-  color: #cbd8e8;
+.metric span {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
 }
 
+@media (max-width: 950px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+  }
+}
 @media (max-width: 600px) {
-  .domains {
-    font-size: 14px;
-    gap: 10px;
+  .metrics {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 </style>

@@ -2,31 +2,31 @@
   <section class="section alt problems" id="solusi">
     <div class="container center">
       <div class="reveal">
-        <span class="kicker text-red">Masalah Operasional Saat Ini</span>
-        <h2>Operasi logistik itu sangat kompleks.</h2>
-        <p class="subtitle">Sebagian besar tim masih terjebak pada cara lama yang membatasi skala pertumbuhan perusahaan, sehingga banyak biaya dan waktu operasional yang akhirnya terbuang sia-sia.</p>
+        <span class="kicker text-red">Masalah Operasional Sektoral</span>
+        <h2>Teknologi yang menyederhanakan operasi, bukan menambah kompleksitas.</h2>
+        <p class="subtitle">Sebagian besar perusahaan kewalahan menghadapi serakan grup WhatsApp pengemudi, spreadsheet silo, dan tumpukan resi Surat Jalan (DO) mekanis yang rentan manipulasi maupun error.</p>
       </div>
 
       <div class="cards-grid">
         <div class="card reveal delay1">
           <div class="icon red">⊘</div>
-          <h3>Sistem Terfragmentasi (Acak)</h3>
+          <h3>Fragmentasi Data</h3>
           <p>
-            Berpindah-pindah antar WhatsApp, Spreadsheet, dan software akunting hanya untuk mengurus satu pengiriman tunggal.
+            Mencari informasi di 3 aplikasi terpisah hanya untuk melihat status bongkar muat satu surat jalan.
           </p>
         </div>
         <div class="card reveal delay2">
           <div class="icon orange">◷</div>
-          <h3>Kerja Manual Berulang</h3>
+          <h3>Keterlambatan Akuntansi</h3>
           <p>
-            Merekap Surat Jalan dan POD (Proof of Delivery) secara manual berisiko besar terjadinya human error dan selisih data final.
+            Tagihan (Invoice) sulit dicairkan dengan instan karena staf harus menginput ulang lembar POD yang fisik.
           </p>
         </div>
         <div class="card reveal delay3">
           <div class="icon gray">∅</div>
-          <h3>Tidak Real-time</h3>
+          <h3>Titik Buta (Blind Spots)</h3>
           <p>
-            Tidak ada yang benar-benar tahu posisi muatan di mana atau berapa estimasi margin profit sebelum akhir bulan berlalu.
+            Customer Services tidak bisa langsung menjawab posisi riil armada truk di jalan tol (lost contact).
           </p>
         </div>
       </div>
@@ -44,11 +44,11 @@
   background: #fff0f1;
 }
 .subtitle {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 50px;
   color: var(--muted);
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 14px;
 }
 .cards-grid {
   display: grid;
@@ -81,20 +81,16 @@
   color: var(--ink);
 }
 .card p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0;
 }
 
 @media (max-width: 950px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
+  .cards-grid { grid-template-columns: 1fr; }
 }
 </style>
