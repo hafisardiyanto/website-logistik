@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 .big-statement {
-  font: 800 58px/1.1 Manrope;
+  font: 800 62px/1.1 Manrope;
   letter-spacing: -2px;
   margin: 0 0 25px;
 }
@@ -31,14 +31,14 @@
   color: var(--cyan);
 }
 .solution-wrap p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.9;
   color: #9ab0c5;
 }
 
 @media (max-width: 600px) {
   .big-statement {
-    font-size: 42px;
+    font-size: 46px;
   }
 }
 </style>

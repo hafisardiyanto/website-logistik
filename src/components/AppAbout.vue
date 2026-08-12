@@ -63,12 +63,12 @@
   min-height: 300px;
 }
 .about-card h3 {
-  font: 800 25px Manrope;
+  font: 800 29px Manrope;
   margin: 0 0 12px;
 }
 .about-card p {
   color: #a9b9cd;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.8;
 }
 .values {
@@ -83,20 +83,20 @@
   padding: 12px;
 }
 .value b {
-  font-size: 10px;
+  font-size: 14px;
 }
 .value span {
   display: block;
-  font-size: 8px;
+  font-size: 12px;
   color: #8196ae;
   margin-top: 4px;
 }
 .about-copy h2 {
-  font: 800 35px/1.15 Manrope;
+  font: 800 39px/1.15 Manrope;
   letter-spacing: -1px;
 }
 .about-copy p {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.8;
 }
@@ -117,11 +117,11 @@
   border: 0;
 }
 .stat b {
-  font: 800 24px Manrope;
+  font: 800 28px Manrope;
 }
 .stat span {
   display: block;
-  font-size: 8px;
+  font-size: 12px;
   color: var(--muted);
   margin-top: 4px;
 }
@@ -133,7 +133,7 @@
 }
 @media (max-width: 600px) {
   .about-copy h2 {
-    font-size: 29px;
+    font-size: 33px;
   }
   .stats4 {
     grid-template-columns: 1fr 1fr;

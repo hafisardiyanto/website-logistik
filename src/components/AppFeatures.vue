@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container">
       <div class="head center reveal">
-        <h2 style="font-size: 32px; font-weight: 800; font-family: Manrope;">Fitur platform operasional Anda secara detail.</h2>
+        <h2 style="font-size: 36px; font-weight: 800; font-family: Manrope;">Fitur platform operasional Anda secara detail.</h2>
       </div>
       <div class="features-list">
         
@@ -75,16 +75,16 @@
   border: 1px solid var(--line);
 }
 .icon {
-  font-size: 24px;
+  font-size: 28px;
 }
 .feat h3 {
-  font-size: 15px;
+  font-size: 19px;
   font-family: Manrope;
   font-weight: 800;
   margin: 0 0 6px;
 }
 .feat p {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0;

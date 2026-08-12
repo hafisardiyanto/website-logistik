@@ -148,14 +148,14 @@ onMounted(() => {
   align-items: center;
 }
 .pill-sm {
-  font-size: 11px; font-weight: 800; letter-spacing: 1px; color: var(--blue);
+  font-size: 15px; font-weight: 800; letter-spacing: 1px; color: var(--blue);
   text-transform: uppercase; background: #eef5ff; padding: 7px 14px;
   border-radius: 99px; display: inline-block; margin-bottom: 25px;
 }
-.hero h1 { font: 800 62px/1.05 Manrope; letter-spacing: -2.5px; margin: 0 0 25px; }
+.hero h1 { font: 800 66px/1.05 Manrope; letter-spacing: -2.5px; margin: 0 0 25px; }
 .hero h1 span { color: var(--blue); display: block; }
-.hero p { font-size: 16px; line-height: 1.8; color: var(--muted); max-width: 500px; }
-.btn-lg { padding: 16px 32px; font-size: 14px; }
+.hero p { font-size: 20px; line-height: 1.8; color: var(--muted); max-width: 500px; }
+.btn-lg { padding: 16px 32px; font-size: 18px; }
 .cta-btn { border-radius: 99px; font-weight: 800; display: inline-block;}
 .btn.shadow { box-shadow: 0 15px 30px #1768e833; }
 .btn-secondary:hover { background: #fdfdfe; border-color: #d8e5f2; color: var(--blue); }
@@ -174,7 +174,7 @@ onMounted(() => {
 }
 .mockup-header {
   height: 45px; background: #fdfdfe; border-bottom: 1px solid #eef3f9;
-  padding: 0 20px; display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 700;
+  padding: 0 20px; display: flex; align-items: center; justify-content: space-between; font-size: 15px; font-weight: 700;
 }
 .mockup-dots i {
   display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #dde5ef; margin-left: 7px;
@@ -186,12 +186,12 @@ onMounted(() => {
 .mockup-kpis { display: grid; grid-template-columns: repeat(3, 1fr); padding: 24px; gap: 20px; background: #fafcff; border-bottom: 1px solid #eef3f9; }
 .kpi-box { background: white; border: 1px solid #e2edf8; padding: 16px; border-radius: 10px; text-align: center; box-shadow: 0 8px 25px rgba(17,66,124,0.02); transition: all 0.3s ease; }
 .kpi-box:hover { transform: translateY(-4px); border-color: #bad3f3; box-shadow: 0 15px 35px rgba(23,104,232,0.08); }
-.kpi-value { display: block; font: 800 27px Manrope; margin-bottom: 5px; }
+.kpi-value { display: block; font: 800 31px Manrope; margin-bottom: 5px; }
 .text-blue { color: var(--blue); } .text-green { color: #00b074; } .text-ink { color: var(--ink); }
-.kpi-label { font-size: 9px; font-weight: 800; color: #7d8fab; text-transform: uppercase; letter-spacing: 1px; }
+.kpi-label { font-size: 13px; font-weight: 800; color: #7d8fab; text-transform: uppercase; letter-spacing: 1px; }
 
 .mockup-chart-wrapper { padding: 24px; flex: 1; }
-.chart-header { font-size: 10px; font-weight: 800; color: #8c9eae; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.chart-header { font-size: 14px; font-weight: 800; color: #8c9eae; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
 .chart-bars { display: flex; align-items: flex-end; height: 80px; gap: 14px; }
 .bar { flex: 1; background: #e4edf8; border-radius: 4px 4px 0 0; height: 0; transition: height 1.5s cubic-bezier(0.1, 0.9, 0.2, 1); position: relative; }
 .chart-bars.animating .bar { height: var(--height); }
@@ -203,7 +203,7 @@ onMounted(() => {
 .bar:nth-child(6) { transition-delay: 0.6s; }
 .bar:nth-child(7) { transition-delay: 0.7s; }
 .bar.text-blue { background: linear-gradient(0deg, #1768e8, #6bb5ff); }
-.bar-tooltip { position: absolute; top: -30px; left: 50%; transform: translateX(-50%) scale(0.8); background: var(--ink); color: white; font-size: 9px; padding: 4px 8px; border-radius: 4px; opacity: 0; transition: 0.2s; pointer-events: none; }
+.bar-tooltip { position: absolute; top: -30px; left: 50%; transform: translateX(-50%) scale(0.8); background: var(--ink); color: white; font-size: 13px; padding: 4px 8px; border-radius: 4px; opacity: 0; transition: 0.2s; pointer-events: none; }
 .bar.text-blue:hover .bar-tooltip { opacity: 1; transform: translateX(-50%) scale(1); }
 
 .mockup-recent { padding: 0 24px 24px; }
@@ -216,16 +216,16 @@ onMounted(() => {
 .status-dot.red { background: #ff5264; }
 .status-dot.pulsing { animation: pulse 2s infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(23,104,232,0.4); } 70% { box-shadow: 0 0 0 6px rgba(23,104,232,0); } 100% { box-shadow: 0 0 0 0 rgba(23,104,232,0); } }
-.recent-item b { font-size: 11px; display: block; color: var(--ink); }
-.recent-item span { font-size: 10px; color: var(--muted); }
-.recent-item small { margin-left: auto; font-size: 9px; color: #a1b0c0; }
+.recent-item b { font-size: 15px; display: block; color: var(--ink); }
+.recent-item span { font-size: 14px; color: var(--muted); }
+.recent-item small { margin-left: auto; font-size: 13px; color: #a1b0c0; }
 
 .notification-pop { position: absolute; top: 60px; right: 20px; background: white; border: 1px solid #dce7f3; padding: 14px; border-radius: 12px; box-shadow: 0 20px 45px rgba(7,42,80,0.12); border-left: 4px solid var(--blue); display: flex; align-items: center; gap: 12px; opacity: 0; transform: translateY(-10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); pointer-events: none; }
 .notification-pop.show-pop { opacity: 1; transform: translateY(0); }
-.notification-pop .icon { font-size: 18px; }
-.pop-text b { font-size: 11px; display: block; }
-.pop-text span { font-size: 9px; color: var(--muted); }
+.notification-pop .icon { font-size: 22px; }
+.pop-text b { font-size: 15px; display: block; }
+.pop-text span { font-size: 13px; color: var(--muted); }
 
 @media (max-width: 950px) { .hero-grid { grid-template-columns: 1fr; } }
-@media (max-width: 600px) { .hero { padding: 50px 0 35px; } .hero h1 { font-size: 40px; } .visual { height: 480px; } .dashboard-mockup { width: 95%; right: 0; } .mockup-kpis { padding: 16px; gap: 10px; } .kpi-box { padding: 12px 6px; } .kpi-value { font-size: 18px; } .notification-pop { right: 5%; } }
+@media (max-width: 600px) { .hero { padding: 50px 0 35px; } .hero h1 { font-size: 44px; } .visual { height: 480px; } .dashboard-mockup { width: 95%; right: 0; } .mockup-kpis { padding: 16px; gap: 10px; } .kpi-box { padding: 12px 6px; } .kpi-value { font-size: 22px; } .notification-pop { right: 5%; } }
 </style>

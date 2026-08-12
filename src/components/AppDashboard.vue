@@ -55,11 +55,11 @@
   align-items: center;
 }
 .dashboard-section h2 {
-  font: 800 34px/1.2 Manrope;
+  font: 800 38px/1.2 Manrope;
   letter-spacing: -1.5px;
 }
 .dashboard-section p {
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.8;
   color: #a9b9cd;
   margin-top: 20px;
@@ -77,13 +77,13 @@
   padding: 0 20px;
   display: flex;
   align-items: center;
-  font-size: 11px;
+  font-size: 15px;
 }
 .dash-content {
   padding: 24px;
 }
 .sample-label {
-  font-size: 9px;
+  font-size: 13px;
   color: #5b7999;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -109,14 +109,14 @@
 .dark-metric small {
   display: block;
   color: #8199b3;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 .dark-metric.highlight small { color: #80c8a6; }
 .dark-metric b {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 800;
   font-family: Manrope;
 }
@@ -149,6 +149,6 @@
   .dark-metric {
     padding: 15px;
   }
-  .dark-metric b { font-size: 20px; }
+  .dark-metric b { font-size: 24px; }
 }
 </style>

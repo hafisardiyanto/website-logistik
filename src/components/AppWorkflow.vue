@@ -65,7 +65,7 @@ const flows = [
   border-color: #d3e1f2;
 }
 .flow-num {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
   color: var(--blue);
   background: #eef5ff;
@@ -76,13 +76,13 @@ const flows = [
 }
 .flow-item h3 {
   font-family: inherit;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 800;
   color: var(--ink);
   margin: 0 0 6px;
 }
 .flow-item p {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0;
@@ -93,6 +93,6 @@ const flows = [
   top: 40px;
   color: #c7d5e4;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 18px;
 }
 </style>

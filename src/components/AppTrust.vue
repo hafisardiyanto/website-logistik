@@ -34,7 +34,7 @@
   background: #fafcff;
 }
 .trust-pill {
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #798ba0;
@@ -52,14 +52,14 @@
 .metric b {
   font-family: Manrope;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 36px;
   color: var(--ink);
   display: block;
   margin-bottom: 5px;
   line-height: 1;
 }
 .metric span {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--muted);
 }

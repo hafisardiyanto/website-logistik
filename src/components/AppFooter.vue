@@ -68,7 +68,7 @@
   gap: 40px;
 }
 .foot-brand p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--muted);
   margin: 20px 0;
@@ -78,23 +78,23 @@
 .logo-mark {
   width: 32px; height: 32px; border-radius: 8px;
   background: linear-gradient(135deg, #1257d4, #66d2ff);
-  display: grid; place-items: center; color: white; font-size: 14px;
+  display: grid; place-items: center; color: white; font-size: 18px;
 }
-.logo b { font: 800 18px Manrope; letter-spacing: -0.5px; color: var(--ink); }
+.logo b { font: 800 22px Manrope; letter-spacing: -0.5px; color: var(--ink); }
 .socials { display: flex; gap: 10px; }
 .socials span {
   width: 32px; height: 32px; border-radius: 6px;
   background: #f0f4f9; display: grid; place-items: center;
-  font-size: 12px; font-weight: 700; color: #8fa4b9; cursor: pointer; transition: 0.2s;
+  font-size: 16px; font-weight: 700; color: #8fa4b9; cursor: pointer; transition: 0.2s;
 }
 .socials span:hover { background: var(--blue); color: white; }
 
 .foot-links b {
-  display: block; font-size: 12px; font-weight: 800;
+  display: block; font-size: 16px; font-weight: 800;
   color: var(--ink); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;
 }
 .foot-links a {
-  display: block; font-size: 13px; color: var(--muted);
+  display: block; font-size: 17px; color: var(--muted);
   margin-bottom: 15px; text-decoration: none; transition: 0.2s;
 }
 .foot-links a:hover { color: var(--blue); transform: translateX(3px); }
@@ -103,7 +103,7 @@
   border-top: 1px solid #edf2f8;
   margin-top: 60px;
   padding-top: 30px;
-  font-size: 12px;
+  font-size: 16px;
   color: #aebfd1;
   text-align: center;
 }

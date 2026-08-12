@@ -2,7 +2,7 @@
   <section class="section showcase" id="product">
     <div class="container center reveal">
       <h2>Lihat platform operasional Anda secara detail.</h2>
-      <p style="max-width: 600px; margin: 15px auto 40px; color: var(--muted); font-size: 14px; line-height:1.7;">
+      <p style="max-width: 600px; margin: 15px auto 40px; color: var(--muted); font-size: 18px; line-height:1.7;">
         Transparansi 100%. Telusuri langsung antarmuka perangkat lunak berbasis cloud LOGISTIQ yang akan digunakan oleh tim operasional Anda dari ujung ke ujung.
       </p>
     </div>
@@ -10,7 +10,7 @@
     <div class="container">
       <div class="showcase-window reveal delay1">
         <div class="window-top">
-          <div class="top-left"><b>LOGISTIQ</b><span style="opacity: 0.5; margin-left: 15px; font-size: 10px;">HQ Dashboard</span></div>
+          <div class="top-left"><b>LOGISTIQ</b><span style="opacity: 0.5; margin-left: 15px; font-size: 14px;">HQ Dashboard</span></div>
           <div class="top-search">
              <div class="search-mock">Cari AWB, Resi, atau Nama Driver...</div>
           </div>
@@ -54,15 +54,15 @@
                   </div>
                   <div class="grid-2">
                     <div class="chart-block">
-                       <span style="font-size:10px; font-weight:800; color:#cbd5e1; margin-bottom:15px; display:block;">REVENUE CHART</span>
+                       <span style="font-size:14px; font-weight:800; color:#cbd5e1; margin-bottom:15px; display:block;">REVENUE CHART</span>
                        <div class="chart-img"><i></i><i></i><i></i><i></i><i></i><i></i></div>
                     </div>
                     <div class="chart-block" style="display:flex; flex-direction:column;">
-                       <span style="font-size:10px; font-weight:800; color:#cbd5e1; margin-bottom:15px; display:block;">RECENT SHIPMENTS</span>
+                       <span style="font-size:14px; font-weight:800; color:#cbd5e1; margin-bottom:15px; display:block;">RECENT SHIPMENTS</span>
                        <div class="recent-mock" v-for="i in 3" :key="i">
                          <div style="background:#e2e8f0; width:12px; height:12px; border-radius:50%;"></div>
                          <div style="flex:1;"><div style="background:#cbd5e1; height:10px; width:40%; margin-bottom:5px;"></div><div style="background:#e2e8f0; height:8px; width:30%;"></div></div>
-                         <div style="background:#f1f5f9; padding:4px 8px; font-size:9px; border-radius:4px;">Detail</div>
+                         <div style="background:#f1f5f9; padding:4px 8px; font-size:13px; border-radius:4px;">Detail</div>
                        </div>
                     </div>
                   </div>
@@ -76,8 +76,8 @@
                        <div class="filter-mock">Bulan Ini ▼</div>
                     </div>
                     <div class="action-right">
-                       <button class="btn clear text-blue" style="font-size:11px; padding:0;">Export CSV</button>
-                       <button class="btn blue" style="padding: 10px 18px; font-size: 11px;">+ New Job Order</button>
+                       <button class="btn clear text-blue" style="font-size:15px; padding:0;">Export CSV</button>
+                       <button class="btn blue" style="padding: 10px 18px; font-size: 15px;">+ New Job Order</button>
                     </div>
                   </div>
                   <table class="mock-table">
@@ -117,7 +117,7 @@
                   </div>
                   <div class="mf-split">
                     <div class="mf-col">
-                      <b style="font-size:12px; margin-bottom:15px; display:block;">Manifest Aktif</b>
+                      <b style="font-size:16px; margin-bottom:15px; display:block;">Manifest Aktif</b>
                       <div class="mock-card" v-for="i in 2" :key="i">
                          <div style="display:flex; justify-content:space-between;"><b>MNF-09{{i}}</b><span class="st blue">In Transit</span></div>
                          <small style="color:var(--muted); display:block; margin:8px 0;">TRK-L00{{i}} • Budi Setiawan</small>
@@ -125,7 +125,7 @@
                       </div>
                     </div>
                     <div class="mf-col">
-                      <b style="font-size:12px; margin-bottom:15px; display:block;">Assign Delivery (Drag & Drop)</b>
+                      <b style="font-size:16px; margin-bottom:15px; display:block;">Assign Delivery (Drag & Drop)</b>
                       <div class="mock-card dashed">DO-773 (Gresik → Malang)</div>
                       <div class="mock-card dashed">DO-774 (Semarang → Jakarta)</div>
                     </div>
@@ -197,7 +197,7 @@ const tabs = [
   padding: 100px 0;
   border-bottom: 1px solid var(--line);
 }
-.showcase h2 { font: 800 36px/1.2 Manrope; margin: 0; }
+.showcase h2 { font: 800 40px/1.2 Manrope; margin: 0; }
 
 .showcase-window {
   border: 1px solid #d1dbec;
@@ -219,11 +219,11 @@ const tabs = [
   justify-content: space-between;
   padding: 0 25px;
 }
-.top-left b { font-size: 15px; letter-spacing: 1.5px; }
+.top-left b { font-size: 19px; letter-spacing: 1.5px; }
 .top-search { flex: 1; display: flex; justify-content: center; }
-.search-mock { width: 350px; background: rgba(255,255,255,0.08); padding: 8px 15px; border-radius: 8px; font-size: 10px; color: rgba(255,255,255,0.5); }
-.top-right { display: flex; align-items: center; gap: 15px; font-size: 13px; }
-.ava { width: 30px; height: 30px; background: var(--cyan); color: #02233f; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 10px; }
+.search-mock { width: 350px; background: rgba(255,255,255,0.08); padding: 8px 15px; border-radius: 8px; font-size: 14px; color: rgba(255,255,255,0.5); }
+.top-right { display: flex; align-items: center; gap: 15px; font-size: 17px; }
+.ava { width: 30px; height: 30px; background: var(--cyan); color: #02233f; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 14px; }
 
 .window-body {
   display: flex;
@@ -238,11 +238,11 @@ const tabs = [
   flex-direction: column;
   gap: 8px;
 }
-.side-group { font-size: 9px; font-weight: 800; color: #a1b0c2; margin-bottom: 5px; padding-left: 10px; }
+.side-group { font-size: 13px; font-weight: 800; color: #a1b0c2; margin-bottom: 5px; padding-left: 10px; }
 .mt-auto { margin-top: auto; margin-bottom: 5px; }
 .side-btn {
   background: transparent; border: 0; text-align: left; padding: 13px 15px;
-  border-radius: 8px; font-size: 12px; font-weight: 600; color: #5a6e84;
+  border-radius: 8px; font-size: 16px; font-weight: 600; color: #5a6e84;
   cursor: pointer; transition: all 0.2s;
 }
 .side-btn:hover { background: #eef4fc; color: var(--ink); }
@@ -261,8 +261,8 @@ const tabs = [
   justify-content: space-between;
   align-items: center;
 }
-.content-head h3 { margin: 0; font-size: 18px; font-weight: 800; }
-.breadcrumbs { font-size: 11px; color: #a5b6c8; font-weight: 600; }
+.content-head h3 { margin: 0; font-size: 22px; font-weight: 800; }
+.breadcrumbs { font-size: 15px; color: #a5b6c8; font-weight: 600; }
 .content-main {
   padding: 35px;
   flex: 1;
@@ -275,8 +275,8 @@ const tabs = [
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .stat-box { background: white; border: 1px solid #eaeff5; padding: 22px; border-radius: 12px; box-shadow: 0 8px 24px rgba(13,38,71,0.015); }
-.stat-box span { font-size: 10px; font-weight: 800; color: #7f91a5; display: block; text-transform: uppercase; margin-bottom: 10px; }
-.stat-box b { font-size: 26px; font-weight: 800; font-family: Manrope; }
+.stat-box span { font-size: 14px; font-weight: 800; color: #7f91a5; display: block; text-transform: uppercase; margin-bottom: 10px; }
+.stat-box b { font-size: 30px; font-weight: 800; font-family: Manrope; }
 .chart-block { flex: 1; background: white; border: 1px solid #eaeff5; border-radius: 12px; padding: 25px; box-shadow: 0 8px 24px rgba(13,38,71,0.015); }
 .chart-img { display: flex; align-items: flex-end; gap: 15px; height: 180px; }
 .chart-img i { flex: 1; background: #e2e8f0; border-radius: 4px 4px 0 0; }
@@ -285,53 +285,53 @@ const tabs = [
 
 .table-actions { display: flex; justify-content: space-between; margin-bottom: 20px; }
 .action-left { display: flex; gap: 10px; }
-.filter-mock { background: white; border: 1px solid #cbd5e1; padding: 10px 14px; font-size: 11px; border-radius: 6px; color: #64748b; font-weight: 600; cursor: pointer; }
+.filter-mock { background: white; border: 1px solid #cbd5e1; padding: 10px 14px; font-size: 15px; border-radius: 6px; color: #64748b; font-weight: 600; cursor: pointer; }
 .action-right { display: flex; gap: 15px; align-items: center; }
 
 .mock-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #eaeff5; border-radius: 10px; overflow: hidden; display: table; box-shadow: 0 4px 15px rgba(0,0,0,0.01); }
-.mock-table th { background: #f8fafc; text-align: left; padding: 16px 20px; font-size: 11px; font-weight: 800; color: #64748b; border-bottom: 2px solid #e2e8f0; }
-.mock-table td { padding: 18px 20px; font-size: 12px; border-bottom: 1px solid #f1f5f9; color: #334155; }
+.mock-table th { background: #f8fafc; text-align: left; padding: 16px 20px; font-size: 15px; font-weight: 800; color: #64748b; border-bottom: 2px solid #e2e8f0; }
+.mock-table td { padding: 18px 20px; font-size: 16px; border-bottom: 1px solid #f1f5f9; color: #334155; }
 .mock-table tr:hover td { background: #f8fafc; }
 .mock-table b { color: var(--ink); }
 
-.st { padding: 5px 12px; border-radius: 99px; font-size: 10px; font-weight: 800; }
+.st { padding: 5px 12px; border-radius: 99px; font-size: 14px; font-weight: 800; }
 .st.green { background: #dcfce7; color: #166534; }
 .st.orange { background: #fef3c7; color: #92400e; }
 .st.blue { background: #dbeafe; color: #1e40af; }
 .st.gray { background: #f1f5f9; color: #475569; }
-.act-btn { font-size: 16px; font-weight: 800; color: #94a3b8; cursor: pointer; }
+.act-btn { font-size: 20px; font-weight: 800; color: #94a3b8; cursor: pointer; }
 .ref-link { color: var(--blue); font-weight: 700; cursor: pointer; }
 
-.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; font-size: 11px; color: #64748b; font-weight: 600; }
+.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; font-size: 15px; color: #64748b; font-weight: 600; }
 .pages { display: flex; gap: 5px; }
 .pg { width: 28px; height: 28px; border-radius: 6px; border: 1px solid #cbd5e1; display: grid; place-items: center; cursor: pointer; }
 .pg.active { background: var(--blue); color: white; border-color: var(--blue); }
 
 .mf-box { background: white; border: 1px solid #eaeff5; padding: 20px; border-radius: 12px; position: relative; }
-.mf-box b { display: block; font-size: 16px; margin-bottom: 5px; font-family: Manrope; }
-.mf-box small { color: var(--muted); font-size: 12px; }
-.trk-stat { position: absolute; right: 15px; top: 15px; font-size: 9px; font-weight: 800; padding: 4px 8px; border-radius: 4px; }
+.mf-box b { display: block; font-size: 20px; margin-bottom: 5px; font-family: Manrope; }
+.mf-box small { color: var(--muted); font-size: 16px; }
+.trk-stat { position: absolute; right: 15px; top: 15px; font-size: 13px; font-weight: 800; padding: 4px 8px; border-radius: 4px; }
 .trk-stat.green { background: #dcfce7; color: #16a34a; } .trk-stat.blue { background: #eff6ff; color: #2563eb; } .trk-stat.red { background: #fee2e2; color: #dc2626; }
 
 .mf-split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .mf-col { background: white; border: 1px solid #eaeff5; border-radius: 12px; padding: 25px; }
 .mock-card { background: white; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
-.mock-card.dashed { border: 1.5px dashed #cbd5e1; color: #64748b; font-weight: 600; font-size: 12px; display: grid; place-items: center; height: 60px; background: #f8fafc; }
+.mock-card.dashed { border: 1.5px dashed #cbd5e1; color: #64748b; font-weight: 600; font-size: 16px; display: grid; place-items: center; height: 60px; background: #f8fafc; }
 .progress-bar { height: 6px; background: #e2e8f0; border-radius: 99px; overflow: hidden; margin-top: 10px; }
 .progress-bar i { display: block; height: 100%; width: 45%; background: var(--blue); }
 
 .track-layout { display: flex; gap: 25px; height: 420px; }
 .map-area { flex: 1; background: #eef4f9; border-radius: 12px; border: 1px solid #eaeff5; }
 .track-side { width: 300px; background: white; border: 1px solid #eaeff5; border-radius: 12px; padding: 25px; }
-.track-side b { font-size: 14px; }
-.track-side p { font-size: 12px; color: var(--muted); margin: 6px 0 20px; }
+.track-side b { font-size: 18px; }
+.track-side p { font-size: 16px; color: var(--muted); margin: 6px 0 20px; }
 .track-side hr { border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 25px; }
 .tl-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; }
 .tl-item i { width: 14px; height: 14px; background: #cbd5e1; border-radius: 50%; box-shadow: 0 0 0 4px white, 0 0 0 5px #e2e8f0; margin-top: 4px; position: relative; }
 .tl-item i::after { content: ""; position: absolute; width: 2px; height: 35px; background: #e2e8f0; left: 6px; top: 16px; }
 .tl-item:last-child i::after { display: none; }
-.tl-t b { font-size: 12px; color: #334155; margin-bottom: 4px; }
-.tl-t small { font-size: 10px; color: #94a3b8; display: block; }
+.tl-t b { font-size: 16px; color: #334155; margin-bottom: 4px; }
+.tl-t small { font-size: 14px; color: #94a3b8; display: block; }
 .tl-item.active i { background: var(--blue); box-shadow: 0 0 0 4px white, 0 0 0 6px #bfdbfe; }
 .tl-item.active .tl-t b { color: var(--blue); }
 .tl-item.dim { opacity: 0.4; }
@@ -343,7 +343,7 @@ const tabs = [
 @media (max-width: 950px) {
   .window-body { flex-direction: column; height: auto; }
   .window-sidebar { width: 100%; border-right: 0; border-bottom: 1px solid #dce5ef; flex-direction: row; flex-wrap: wrap; padding: 15px; }
-  .side-btn { padding: 10px 15px; font-size: 12px; }
+  .side-btn { padding: 10px 15px; font-size: 16px; }
   .grid-4, .grid-3 { grid-template-columns: 1fr 1fr; }
   .content-main { max-height: 600px; }
   .top-search { display: none; }

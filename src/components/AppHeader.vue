@@ -90,11 +90,11 @@ const scrollToId = (id) => {
   display: grid;
   place-items: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   box-shadow: 0 9px 22px #1768e83b;
 }
 .logo b {
-  font: 800 21px Manrope;
+  font: 800 25px Manrope;
   letter-spacing: -0.5px;
   color: #0c1b30;
 }
@@ -103,7 +103,7 @@ const scrollToId = (id) => {
   gap: 35px;
   align-items: center;
   color: #4b5e73;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
 }
 .links a:hover { color: var(--blue); }
@@ -117,10 +117,10 @@ const scrollToId = (id) => {
   color: #4b5e73;
   font-weight: 700;
   font-family: Arial;
-  font-size: 13px;
+  font-size: 17px;
 }
 .btn.clear:hover { color: var(--blue); }
-.hamb { display: none; border: 0; background: none; font-size: 24px; }
+.hamb { display: none; border: 0; background: none; font-size: 28px; }
 @media (max-width: 950px) {
   .links, .nav-buttons { display: none; }
   .hamb { display: block; }

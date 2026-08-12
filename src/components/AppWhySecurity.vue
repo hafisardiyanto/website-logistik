@@ -63,19 +63,19 @@
 }
 .num {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 800;
   color: #aebfd1;
   display: block;
   margin-bottom: 12px;
 }
 .reason h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
   margin: 0 0 12px;
 }
 .reason p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--muted);
   margin: 0;
@@ -99,7 +99,7 @@
   border-right: 0;
 }
 .icon-head {
-  font-size: 15px;
+  font-size: 19px;
   font-family: Manrope;
   font-weight: 800;
   color: var(--cyan);
@@ -111,7 +111,7 @@
   padding: 0;
 }
 .tech-col li {
-  font-size: 13px;
+  font-size: 17px;
   color: #a4bedb;
   margin: 15px 0;
   padding-left: 25px;

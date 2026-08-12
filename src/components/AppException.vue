@@ -3,10 +3,10 @@
     <div class="container exception-grid">
       <div class="reveal">
         <span class="kicker text-orange">EXCEPTION MANAGEMENT</span>
-        <h2 style="font-size: 32px; font-weight: 800; font-family: Manrope; margin-bottom: 20px;">
+        <h2 style="font-size: 36px; font-weight: 800; font-family: Manrope; margin-bottom: 20px;">
           Tahu <span style="font-style: italic; color: var(--blue)">kenapa</span> barang terlambat, bukan hanya tahu barang terlambat.
         </h2>
-        <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+        <p style="color: var(--muted); font-size: 18px; line-height: 1.8;">
           Jangan sekadar melacak lokasi GPS. Aplikasi kami secara cerdas mendeteksi *business problem* 
           layaknya keterlambatan armada karena kustomer tidak ada di tempat maupun faktor kendala cuaca.
         </p>
@@ -67,10 +67,10 @@
   gap: 10px;
 }
 .dot.red { width: 10px; height: 10px; border-radius: 50%; background: #ff3b53; }
-.mock-hdr b { font-size: 12px; color: #bc2033; }
+.mock-hdr b { font-size: 16px; color: #bc2033; }
 .mock-body { padding: 25px; }
-.shp-num { font: 800 18px Manrope; }
-.route { font-size: 11px; color: var(--muted); margin: 4px 0 20px; }
+.shp-num { font: 800 22px Manrope; }
+.route { font-size: 15px; color: var(--muted); margin: 4px 0 20px; }
 .warning-box {
   background: #fff4f5;
   border: 1px solid #fdd6da;
@@ -81,11 +81,11 @@
   align-items: flex-start;
   margin-bottom: 25px;
 }
-.warning-box .icon { font-size: 18px; color: #e63946; }
-.warning-box b { font-size: 12px; display: block; color: #a41d2a; }
-.warning-box span { font-size: 11px; color: #cb4653; display: block; margin-top: 4px;}
+.warning-box .icon { font-size: 22px; color: #e63946; }
+.warning-box b { font-size: 16px; display: block; color: #a41d2a; }
+.warning-box span { font-size: 15px; color: #cb4653; display: block; margin-top: 4px;}
 .action-btns { display: flex; gap: 10px; }
-.btn.full { flex: 1; padding: 12px; font-size: 12px; }
+.btn.full { flex: 1; padding: 12px; font-size: 16px; }
 
 @media (max-width: 950px) {
   .exception-grid { grid-template-columns: 1fr; }

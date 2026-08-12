@@ -67,7 +67,7 @@ const scrollToId = (id) => {
   pointer-events: none;
 }
 .cta-box h2 {
-  font: 800 42px Manrope;
+  font: 800 46px Manrope;
   letter-spacing: -2px;
   margin: 0 auto 15px;
   max-width: 650px;
@@ -75,7 +75,7 @@ const scrollToId = (id) => {
   z-index: 2;
 }
 .cta-box p {
-  font-size: 15px;
+  font-size: 19px;
   color: #fff;
   opacity: 0.9;
   position: relative;
@@ -84,7 +84,7 @@ const scrollToId = (id) => {
 }
 .btn-lg {
   padding: 18px 40px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .cta-box .actions {
   position: relative;
@@ -124,7 +124,7 @@ const scrollToId = (id) => {
     padding: 60px 25px 0;
   }
   .cta-box h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
   .cta-visual {
     width: 90%;

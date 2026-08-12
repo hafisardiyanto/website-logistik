@@ -76,15 +76,15 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
   top: 10px;
   border: 0;
   background: none;
-  font-size: 25px;
+  font-size: 29px;
   cursor: pointer;
 }
 .login-box h2 {
-  font: 800 25px Manrope;
+  font: 800 29px Manrope;
   margin: 14px 0 6px;
 }
 .login-box p {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--muted);
 }
 .login-box input {
@@ -99,7 +99,7 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 9px;
+  font-size: 13px;
   color: #758399;
   margin: 7px 0 15px;
 }
@@ -109,7 +109,7 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
 .login-divider {
   text-align: center;
   color: #9aa7b7;
-  font-size: 9px;
+  font-size: 13px;
   margin: 16px 0;
 }
 .login-demo {
@@ -118,7 +118,7 @@ onUnmounted(() => document.removeEventListener('keydown', handleKeydown))
   width: 100%;
   padding: 11px;
   border-radius: 8px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
 }

@@ -76,15 +76,15 @@
   background: #edf5ff;
   display: grid;
   place-items: center;
-  font-size: 21px;
+  font-size: 25px;
 }
 .feature h3 {
-  font-size: 15px;
+  font-size: 19px;
   margin: 16px 0 7px;
   font-weight: 800;
 }
 .feature p {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0;

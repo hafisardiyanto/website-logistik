@@ -78,23 +78,23 @@
   color: white;
   padding: 5px 12px;
   border-radius: 99px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
 }
 .card h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
   margin: 0;
 }
 .card strong {
   display: block;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 800;
   font-family: Manrope;
   margin: 12px 0 10px;
 }
 .card p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0;
@@ -109,7 +109,7 @@
   overflow-x: auto;
 }
 .matrix-table h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-family: Manrope;
   font-weight: 800;
   margin-top: 0;
@@ -122,7 +122,7 @@ table {
 th {
   text-align: left;
   padding: 15px 10px;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
   color: #798ba0;
@@ -130,7 +130,7 @@ th {
 }
 td {
   padding: 18px 10px;
-  font-size: 13px;
+  font-size: 17px;
   border-bottom: 1px solid #ebf0f7;
 }
 tbody tr:last-child td { border-bottom: 0; }

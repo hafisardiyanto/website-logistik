@@ -2,7 +2,7 @@
   <section class="section tech-section" id="tech">
     <div class="container center">
       <div class="reveal">
-        <h2 style="margin-bottom: 50px; font: 800 32px Manrope;">Teknologi Skala Enterprise</h2>
+        <h2 style="margin-bottom: 50px; font: 800 36px Manrope;">Teknologi Skala Enterprise</h2>
       </div>
       <div class="stats4 reveal delay1">
         <div class="stat">
@@ -48,16 +48,16 @@
   border: 0;
 }
 .icon-wrap {
-  font-size: 26px;
+  font-size: 30px;
   margin-bottom: 12px;
 }
 .stat b {
-  font: 800 18px Manrope;
+  font: 800 22px Manrope;
   display: block;
 }
 .stat span {
   display: block;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--muted);
   margin-top: 8px;

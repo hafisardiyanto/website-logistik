@@ -48,7 +48,7 @@
   margin: 0 auto 50px;
   color: var(--muted);
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 18px;
 }
 .cards-grid {
   display: grid;
@@ -70,18 +70,18 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
-  font-size: 22px;
+  font-size: 26px;
 }
 .icon.red { background: #feebeb; color: var(--red); }
 .icon.orange { background: #fff0e0; color: #ff8c00; }
 .icon.gray { background: #f0f3f7; color: #768a9f; }
 .card h3 {
-  font-size: 15px;
+  font-size: 19px;
   margin: 0 0 12px;
   color: var(--ink);
 }
 .card p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0;

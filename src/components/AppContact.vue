@@ -62,11 +62,11 @@ const submitContact = () => {
   align-items: start;
 }
 .contact-copy h2 {
-  font: 800 36px/1.15 Manrope;
+  font: 800 40px/1.15 Manrope;
   letter-spacing: -1px;
 }
 .contact-copy p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--muted);
 }
@@ -80,11 +80,11 @@ const submitContact = () => {
 }
 .contact-info b {
   display: block;
-  font-size: 10px;
+  font-size: 14px;
 }
 .contact-info span {
   display: block;
-  font-size: 9px;
+  font-size: 13px;
   color: var(--muted);
   margin-top: 3px;
 }
@@ -95,7 +95,7 @@ const submitContact = () => {
   box-shadow: 0 20px 55px #123d700d;
 }
 .form h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 0 15px;
 }
 .form-grid {
@@ -125,7 +125,7 @@ const submitContact = () => {
 }
 @media (max-width: 600px) {
   .contact-copy h2 {
-    font-size: 29px;
+    font-size: 33px;
   }
 }
 </style>

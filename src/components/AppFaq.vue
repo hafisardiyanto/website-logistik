@@ -2,7 +2,7 @@
   <section class="section faq-section" id="faq">
     <div class="container center">
       <div class="reveal">
-        <h2 style="font-size: 32px; font-weight: 800; font-family: Manrope; margin-bottom: 40px;">Frequently Asked Questions</h2>
+        <h2 style="font-size: 36px; font-weight: 800; font-family: Manrope; margin-bottom: 40px;">Frequently Asked Questions</h2>
       </div>
       
       <div class="faq-list reveal delay1">
@@ -44,14 +44,14 @@
   border-top: 1px solid var(--line);
 }
 .faq-item b {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 800;
   font-family: Manrope;
   display: block;
   margin-bottom: 10px;
 }
 .faq-item p {
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.8;
   color: var(--muted);
   margin: 0;
