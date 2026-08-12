@@ -2,15 +2,19 @@
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="reveal">
-        <span class="pill">✦ Platform Operasional Logistik</span>
-        <h1>Jalankan logistik <span>tanpa terkacaukan operasional.</span></h1>
+        <span class="pill-sm">Platform Operasional Logistik</span>
+        <h1>Jalankan logistik <span>tanpa kekacauan operasional.</span></h1>
         <p>
-          Satu-satunya perangkat lunak tingkat bisnis yang mengelola pesanan, armada, jadwal, dan arus kas dalam satu jalinan mulus yang mudah digunakan oleh seluruh lapisan.
+          Kelola Job Order, Delivery Order, Manifest, Shipment, Tracking, 
+          hingga Billing dalam satu platform mandiri yang terstruktur.
         </p>
         <div class="actions">
-          <button class="btn blue btn-lg" @click="scrollToId('contact')">
+          <button class="btn blue btn-lg cta-btn" @click="scrollToId('contact')">
             Jadwalkan Demo
           </button>
+          <a class="btn outline btn-lg cta-btn" href="#product" style="border-radius: 99px;">
+            Lihat Produk
+          </a>
         </div>
       </div>
       
@@ -28,47 +32,59 @@
               <span class="kpi-label">Shipments</span>
             </div>
             <div class="kpi-box">
-              <span class="kpi-value text-green">98.6%</span>
-              <span class="kpi-label">SLA Met</span>
+              <span class="kpi-value text-green">{{ (targetSla * (shipmentCount / targetShipment)).toFixed(1) }}%</span>
+              <span class="kpi-label">SLA</span>
             </div>
             <div class="kpi-box">
-              <span class="kpi-value text-ink">126</span>
+              <span class="kpi-value text-ink">{{ Math.floor(126 * (shipmentCount / targetShipment)) }}</span>
               <span class="kpi-label">In Transit</span>
             </div>
           </div>
           
           <div class="mockup-chart-wrapper">
-            <div class="chart-header">Volume / 7 Days</div>
-            <div class="chart-bars">
-              <div class="bar" style="height: 40%"></div>
-              <div class="bar" style="height: 65%"></div>
-              <div class="bar" style="height: 50%"></div>
-              <div class="bar" style="height: 85%"></div>
-              <div class="bar" style="height: 70%"></div>
-              <div class="bar" style="height: 95%"></div>
-              <div class="bar text-blue" style="height: 100%"></div>
+            <div class="chart-header">Analytics Chart</div>
+            <div class="chart-bars" :class="{ 'animating': mounted }">
+              <div class="bar" style="--height: 40%"></div>
+              <div class="bar" style="--height: 65%"></div>
+              <div class="bar" style="--height: 50%"></div>
+              <div class="bar" style="--height: 85%"></div>
+              <div class="bar" style="--height: 70%"></div>
+              <div class="bar" style="--height: 95%"></div>
+              <div class="bar text-blue" style="--height: 100%">
+                <div class="bar-tooltip">Revenue Up</div>
+              </div>
             </div>
           </div>
           
           <div class="mockup-recent">
             <div class="chart-header">Recent Shipments</div>
-            <div class="recent-item">
-              <div class="status-dot green"></div>
-              <div><b>SHP-8091</b><span>Delivered to JKT</span></div>
-              <small>Just now</small>
-            </div>
-            <div class="recent-item">
-              <div class="status-dot blue"></div>
-              <div><b>SHP-8092</b><span>In Transit (Tol Cipali)</span></div>
-              <small>15m ago</small>
-            </div>
-            <div class="recent-item">
-              <div class="status-dot red"></div>
-              <div><b>SHP-8093</b><span>Delayed (Weather)</span></div>
-              <small>1h ago</small>
+            <div class="recent-list">
+              <div class="recent-item hoverable" style="--delay: 0.1s">
+                <div class="status-dot green"></div>
+                <div><b>SHP-8091</b><span>Delivered</span></div>
+                <small>Baru saja</small>
+              </div>
+              <div class="recent-item hoverable" style="--delay: 0.2s">
+                <div class="status-dot blue"></div>
+                <div><b>SHP-8092</b><span>In Transit</span></div>
+                <small>15m lalu</small>
+              </div>
+              <div class="recent-item hoverable" style="--delay: 0.3s">
+                <div class="status-dot red"></div>
+                <div><b>SHP-8093</b><span>Delayed</span></div>
+                <small>1j lalu</small>
+              </div>
             </div>
           </div>
           
+          <div class="notification-pop" :class="{ 'show-pop': showNotification }">
+            <div class="icon">🔔</div>
+            <div class="pop-text">
+              <b>Manifest MNF-102 selesai</b>
+              <span>12 DO dialokasikan ke TRK-01.</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -80,14 +96,18 @@ import { ref, onMounted } from 'vue'
 
 const shipmentCount = ref(0)
 const targetShipment = 1248
+const targetSla = 98.6
+const mounted = ref(false)
+const showNotification = ref(false)
 
 const scrollToId = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
-// Numeral animation
 onMounted(() => {
-  const duration = 2000;
+  setTimeout(() => mounted.value = true, 500);
+
+  const duration = 2500;
   const steps = 60;
   const stepTime = duration / steps;
   let currentStep = 0;
@@ -100,87 +120,103 @@ onMounted(() => {
       clearInterval(timer);
     }
   }, stepTime);
+
+  setTimeout(() => {
+    showNotification.value = true;
+  }, 3500);
+
+  setTimeout(() => {
+    showNotification.value = false;
+  }, 7500);
 });
 </script>
 
 <style scoped>
 .hero {
-  padding: 88px 0 70px;
-  background: linear-gradient(180deg, #f0f7ff, #fff 80%);
+  padding: 85px 0 90px;
+  background: white;
   overflow: hidden;
   position: relative;
-}
-.hero:after {
-  content: "";
-  position: absolute;
-  width: 620px;
-  height: 620px;
-  right: -180px;
-  top: -130px;
-  background: radial-gradient(circle, #e0f0ff, transparent 66%);
-  pointer-events: none;
 }
 .hero-grid {
   position: relative;
   z-index: 1;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 65px;
+  gap: 75px;
   align-items: center;
+}
+.pill-sm {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--blue);
+  text-transform: uppercase;
+  background: #eef5ff;
+  padding: 7px 14px;
+  border-radius: 99px;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 .hero h1 {
   font: 800 62px/1.05 Manrope;
   letter-spacing: -2.5px;
-  margin: 20px 0;
+  margin: 0 0 25px;
 }
 .hero h1 span {
   color: var(--blue);
   display: block;
 }
 .hero p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--muted);
   max-width: 500px;
 }
 .btn-lg {
-  padding: 14px 28px;
+  padding: 16px 32px;
   font-size: 14px;
+}
+.cta-btn {
+  border-radius: 99px;
 }
 .actions {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 35px;
 }
+
+/* Visual Dashboard App */
 .visual {
-  height: 480px;
+  height: 490px;
   position: relative;
 }
 .orb {
   position: absolute;
-  inset: 0 0 0 40px;
+  inset: -20px -20px 0 20px;
   border-radius: 50%;
-  background: radial-gradient(circle at 60% 40%, #e8f4ff, transparent 65%);
+  background: radial-gradient(circle at 60% 40%, #d4eaff, transparent 65%);
 }
 .dashboard-mockup {
   position: absolute;
-  top: 20px;
-  right: -20px;
+  top: 10px;
+  right: -30px;
   width: 100%;
-  height: 420px;
+  height: 460px;
   border: 1px solid #dce7f3;
-  border-radius: 16px;
+  border-radius: 12px;
   background: white;
-  box-shadow: 0 35px 80px #0634671e;
+  box-shadow: 0 45px 100px #06346718;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 .mockup-header {
   height: 45px;
-  background: #091d36;
-  color: #fff;
+  background: #fdfdfe;
+  border-bottom: 1px solid #eef3f9;
+  color: var(--ink);
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -189,12 +225,16 @@ onMounted(() => {
 }
 .mockup-dots i {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #2b4465;
-  margin-left: 6px;
+  background: #dde5ef;
+  margin-left: 7px;
 }
+.mockup-dots i:nth-child(1) { background: #ff5264; }
+.mockup-dots i:nth-child(2) { background: #ffbd2d; }
+.mockup-dots i:nth-child(3) { background: #00ca62; }
+
 .mockup-kpis {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -206,21 +246,26 @@ onMounted(() => {
 .kpi-box {
   background: white;
   border: 1px solid #e2edf8;
-  padding: 18px;
-  border-radius: 12px;
+  padding: 16px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 10px 30px #11427c08;
+  box-shadow: 0 8px 25px #11427c06;
+  transition: transform 0.2s;
+}
+.kpi-box:hover {
+  transform: translateY(-4px);
+  border-color: #c0dbfb;
 }
 .kpi-value {
   display: block;
-  font: 800 28px Manrope;
+  font: 800 27px Manrope;
   margin-bottom: 5px;
 }
 .text-blue { color: var(--blue); }
 .text-green { color: #00b074; }
 .text-ink { color: var(--ink); }
 .kpi-label {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   color: #7d8fabaa;
   text-transform: uppercase;
@@ -236,21 +281,45 @@ onMounted(() => {
   color: #8c9eae;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .chart-bars {
   display: flex;
   align-items: flex-end;
-  height: 70px;
+  height: 80px;
   gap: 12px;
 }
 .bar {
   flex: 1;
   background: #e4edf8;
   border-radius: 4px 4px 0 0;
-  transition: all 1s ease;
+  height: 0; 
+  transition: height 1.5s cubic-bezier(0.1, 0.9, 0.2, 1);
+  position: relative;
 }
-.bar.text-blue { background: linear-gradient(0deg, #1768e8, #6bb5ff); }
+.chart-bars.animating .bar {
+  height: var(--height);
+}
+.bar.text-blue { background: linear-gradient(0deg, #1768e8, #6bb5ff); cursor: pointer; }
+.bar-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background: var(--ink);
+  color: white;
+  font-size: 9px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.2s;
+  pointer-events: none;
+}
+.bar.text-blue:hover .bar-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
 
 .mockup-recent {
   padding: 0 24px 24px;
@@ -259,10 +328,23 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f1f5fa;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: 0.2s;
+  animation: slideUp 0.5s ease-out both;
+  animation-delay: var(--delay);
 }
-.recent-item:last-child { border: 0; }
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.recent-item:hover {
+  background: white;
+  border-color: #e5effa;
+  box-shadow: 0 5px 15px #11345d09;
+}
 .status-dot {
   width: 10px;
   height: 10px;
@@ -275,6 +357,33 @@ onMounted(() => {
 .recent-item span { font-size: 10px; color: var(--muted); }
 .recent-item small { margin-left: auto; font-size: 9px; color: #a1b0c0; }
 
+.notification-pop {
+  position: absolute;
+  top: 55px;
+  right: 20px;
+  background: white;
+  border: 1px solid #dce7f3;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px #072a501e;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+.notification-pop.show-pop {
+  opacity: 1;
+  transform: translateY(0);
+}
+.notification-pop .icon {
+  font-size: 20px;
+}
+.pop-text b { font-size: 11px; display: block; }
+.pop-text span { font-size: 9px; color: var(--muted); }
+
 @media (max-width: 950px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -282,14 +391,14 @@ onMounted(() => {
 }
 @media (max-width: 600px) {
   .hero {
-    padding: 60px 0 35px;
+    padding: 50px 0 35px;
   }
   .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: -1.5px;
   }
   .visual {
-    height: 440px;
+    height: 480px;
   }
   .dashboard-mockup {
     width: 95%;
@@ -303,10 +412,13 @@ onMounted(() => {
     padding: 12px 6px;
   }
   .kpi-value {
-    font-size: 20px;
+    font-size: 18px;
   }
   .kpi-label {
-    font-size: 9px;
+    font-size: 8px;
+  }
+  .notification-pop {
+    right: 5%;
   }
 }
 </style>

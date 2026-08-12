@@ -2,32 +2,18 @@
   <section class="section workflow-stage" id="workflow">
     <div class="container">
       <div class="head center reveal">
-        <span class="kicker">Workflow Terintegrasi</span>
-        <h2>Skema alur kerja logistik terstruktur.</h2>
+        <span class="kicker">Satu Perjalanan</span>
+        <h2>Satu platform.</h2>
       </div>
 
-      <div class="workflow-container reveal delay1">
-        <div class="flow-steps">
-          <button 
-            v-for="(step, index) in steps" 
-            :key="index"
-            class="step-btn"
-            :class="{ active: activeStep === index }"
-            @click="activeStep = index"
-          >
-            <div class="step-num">{{ index + 1 }}</div>
-            <span>{{ step.title }}</span>
-          </button>
-        </div>
-        
-        <div class="flow-content-box">
-          <transition name="fade" mode="out-in">
-            <div :key="activeStep" class="content-anim">
-              <div class="content-icon">{{ steps[activeStep].icon }}</div>
-              <h3>{{ steps[activeStep].title }}</h3>
-              <p>{{ steps[activeStep].desc }}</p>
-            </div>
-          </transition>
+      <div class="workflow-pad">
+        <div class="flow-track reveal delay1">
+          <div class="flow-item" v-for="(item, i) in flows" :key="i">
+            <div class="flow-num">{{ item.num }}</div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.desc }}</p>
+            <div class="flow-arrow" v-if="i < flows.length - 1">→</div>
+          </div>
         </div>
       </div>
     </div>
@@ -35,144 +21,78 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
-const activeStep = ref(1)
-
-const steps = [
-  { title: "Order (Request)", icon: "👥", desc: "Sistem menangkap permintaan pelanggan secara otomatis atau manual sebagai titik awal perjalanan logistik." },
-  { title: "Job Order", icon: "📋", desc: "Kelola permintaan pengiriman dan buat pekerjaan operasional secara terstruktur (siapa, ke mana, dan detail kargo)." },
-  { title: "Delivery Order (DO)", icon: "📦", desc: "Perkuat dan petakan armada pengiriman sebelum keberangkatan untuk menjamin kesesuaian kapasitas muatan." },
-  { title: "Manifest", icon: "📑", desc: "Atur kendaraan, driver, rute, dan muatan dalam satu proses pemberangkatan final." },
-  { title: "Shipment Tracking", icon: "📍", desc: "Pantau status pengiriman secara real-time via GPS beserta log update waktu perjalanannya." },
-  { title: "Delivery", icon: "🚚", desc: "Barang sampai ditujuan dengan koordinasi lapangan yang sangat minim hambatan." },
-  { title: "POD (Proof of Delivery)", icon: "✓", desc: "Ambil foto bukti terima dan tanda tangan digital. Dokumen langsung terunggah sinkron ke sistem." },
-  { title: "Invoice & Billing", icon: "₨", desc: "Data final langsung dialirkan ke tim keuangan. Buat tagihan akurat tanpa harus melakukan crosscheck manual lagi." },
+const flows = [
+  { num: '01', title: 'Order', desc: 'Sistem menangkap permintaan pelanggan.' },
+  { num: '02', title: 'Job Order', desc: 'Ubah permintaan menjadi pekerjaan operasional.' },
+  { num: '03', title: 'Delivery Order', desc: 'Atur detail pengiriman, customer & muatan.' },
+  { num: '04', title: 'Manifest', desc: 'Kelompokkan berdasarkan armada & rute.' },
+  { num: '05', title: 'Shipment', desc: 'Operasi pengangkutan dan logistik muatan.' },
+  { num: '06', title: 'Delivery', desc: 'Pantau perjalanan hingga sampai riil lapangan.' },
+  { num: '07', title: 'POD', desc: 'Dokumentasi bukti pengiriman instan.' },
+  { num: '08', title: 'Billing', desc: 'Sinkronisasi profit tagihan.' }
 ]
 </script>
 
 <style scoped>
 .workflow-stage {
-  background: #f8fbff;
-  border-bottom: 1px solid var(--line);
-}
-.workflow-container {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
   background: white;
-  border: 1px solid #e1e9f4;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 25px 60px #123d7009;
 }
-.flow-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-right: 1px solid #eef2f7;
-  padding-right: 15px;
+.workflow-pad {
+  overflow-x: auto;
+  padding: 20px 0 30px;
+  /* Hide scrollbar for cleaner look */
+  scrollbar-width: thin;
+  scrollbar-color: #d1d8e1 transparent;
 }
-.step-btn {
+.flow-track {
   display: flex;
-  align-items: center;
   gap: 12px;
-  width: 100%;
-  padding: 12px 15px;
-  background: transparent;
-  border: 2px solid transparent;
-  border-radius: 10px;
+  min-width: 1400px; /* Force horizontal scrolling if container is small */
+  padding: 0 10px;
+}
+.flow-item {
+  flex: 1;
+  background: #fdfdfe;
+  border: 1px solid #ebf0f7;
+  padding: 22px 18px;
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.flow-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px #123d700d;
+  border-color: #d3e1f2;
+}
+.flow-num {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--blue);
+  background: #eef5ff;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.flow-item h3 {
   font-family: inherit;
   font-size: 13px;
-  font-weight: 700;
-  color: #6c7e94;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.step-btn:hover {
-  background: #f4f8fe;
+  font-weight: 800;
   color: var(--ink);
+  margin: 0 0 6px;
 }
-.step-btn.active {
-  background: #e9f2ff;
-  border-color: #c9e0ff;
-  color: var(--blue);
-}
-.step-num {
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
-  display: grid;
-  place-items: center;
+.flow-item p {
   font-size: 10px;
-  background: #e2ecf9;
-  color: #7b91ab;
-}
-.step-btn.active .step-num {
-  background: var(--blue);
-  color: white;
-}
-
-.flow-content-box {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-}
-.content-icon {
-  font-size: 55px;
-  margin-bottom: 25px;
-}
-.content-anim h3 {
-  font: 800 28px Manrope;
-  margin: 0 0 15px;
-}
-.content-anim p {
-  font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.6;
   color: var(--muted);
-  max-width: 500px;
+  margin: 0;
 }
-
-/* Transitions */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.fade-enter-from {
-  opacity: 0;
-  transform: translateY(10px);
-}
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-@media (max-width: 950px) {
-  .workflow-container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-  .flow-steps {
-    border-right: none;
-    border-bottom: 1px solid #eef2f7;
-    padding-right: 0;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .flow-content-box {
-    padding: 20px 0 0;
-  }
-}
-@media (max-width: 600px) {
-  .flow-steps {
-    grid-template-columns: 1fr;
-  }
-  .content-anim h3 {
-    font-size: 24px;
-  }
-  .content-icon {
-    font-size: 45px;
-  }
+.flow-arrow {
+  position: absolute;
+  right: -13px;
+  top: 40px;
+  color: #c7d5e4;
+  font-family: Arial;
+  font-size: 14px;
 }
 </style>

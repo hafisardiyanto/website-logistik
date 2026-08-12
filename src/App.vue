@@ -7,10 +7,13 @@ import AppProblems from './components/AppProblems.vue'
 import AppSolution from './components/AppSolution.vue'
 import AppWorkflow from './components/AppWorkflow.vue'
 import AppProductPreview from './components/AppProductPreview.vue'
-import AppProduct from './components/AppProduct.vue'
+import AppFeatures from './components/AppFeatures.vue'
+import AppException from './components/AppException.vue'
+import AppProfit from './components/AppProfit.vue'
 import AppDashboard from './components/AppDashboard.vue'
+import AppWhySecurity from './components/AppWhySecurity.vue'
 import AppPricing from './components/AppPricing.vue'
-import AppTech from './components/AppTech.vue'
+import AppFaq from './components/AppFaq.vue'
 import AppCta from './components/AppCta.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppLogin from './components/AppLogin.vue'
@@ -33,7 +36,6 @@ onMounted(() => {
       }),
     { threshold: 0.12 },
   );
-  // Add a slight delay to allow rendering of child components before observing
   setTimeout(() => {
     document
       .querySelectorAll(".reveal")
@@ -51,10 +53,13 @@ onMounted(() => {
     <AppSolution />
     <AppWorkflow />
     <AppProductPreview />
-    <AppProduct />
+    <AppFeatures />
+    <AppException />
+    <AppProfit />
     <AppDashboard />
+    <AppWhySecurity />
     <AppPricing />
-    <AppTech />
+    <AppFaq />
     <AppCta />
   </main>
   <AppFooter />

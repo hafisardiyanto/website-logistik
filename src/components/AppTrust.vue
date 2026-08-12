@@ -1,13 +1,16 @@
 <template>
   <div class="trust">
-    <div class="container">
-      <p>Dirancang untuk tim yang memindahkan produk dalam skala besar</p>
-      <div class="brandrow">
-        <span>LOGITRANS</span>
-        <span>MOVECO</span>
-        <span>FLEETLY</span>
-        <span>WAREX</span>
-        <span>DELIVR</span>
+    <div class="container center">
+      <div class="reveal">
+        <span class="trust-pill">Built for modern logistics operations</span>
+        <div class="domains">
+          <span>TRUCKING</span><span class="dot">•</span>
+          <span>3PL</span><span class="dot">•</span>
+          <span>DISTRIBUTION</span><span class="dot">•</span>
+          <span>WAREHOUSE</span><span class="dot">•</span>
+          <span>FREIGHT FORWARDING</span>
+        </div>
+        <p>Dirancang khusus untuk perusahaan logistik yang membutuhkan visibilitas operasional penuh.</p>
       </div>
     </div>
   </div>
@@ -15,36 +18,46 @@
 
 <style scoped>
 .trust {
-  border-top: 1px solid #edf1f5;
   border-bottom: 1px solid #edf1f5;
-  padding: 23px 0;
+  padding: 40px 0;
+  text-align: center;
+  background: #fafcff;
 }
-.trust .container {
+.trust-pill {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #798ba0;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 25px;
+}
+.domains {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  font-family: Manrope;
+}
+.dot {
+  color: #cbd8e8;
 }
 .trust p {
-  font-size: 9px;
-  color: #8996a7;
-  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  margin: 30px auto 0;
+  max-width: 500px;
 }
-.brandrow {
-  display: flex;
-  gap: 35px;
-  color: #8290a2;
-  font-weight: 700;
-  font-size: 12px;
-}
+
 @media (max-width: 600px) {
-  .trust .container {
-    display: block;
-  }
-  .brandrow {
-    margin-top: 15px;
-    gap: 17px;
-    flex-wrap: wrap;
+  .domains {
+    font-size: 14px;
+    gap: 10px;
   }
 }
 </style>

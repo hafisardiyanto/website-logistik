@@ -3,13 +3,11 @@
     <div class="container dashboard-grid">
       <div class="dash-large reveal">
         <div class="dash-top">
-          <b>Analitik LOGISTIQ</b><span>● Live · Baru saja diperbarui</span>
+          <b>Analitik Keuangan & Performa</b>
         </div>
         <div class="dash-content">
+          <div class="sample-label">※ Sample operational data</div>
           <div class="dark-metrics">
-            <div class="dark-metric">
-              <small>Revenue</small><b>Rp 4.5B</b>
-            </div>
             <div class="dark-metric">
               <small>Shipment</small><b>12,840</b>
             </div>
@@ -17,10 +15,10 @@
               <small>SLA</small><b>98.6%</b>
             </div>
             <div class="dark-metric">
-              <small>Cost</small><b>Rp 1.2B</b>
+              <small>In Transit</small><b>126</b>
             </div>
             <div class="dark-metric highlight">
-              <small>Profit (Gross)</small><b>Rp 3.3B</b>
+              <small>Revenue</small><b>Rp 1.82 M</b>
             </div>
           </div>
           <div class="dark-chart">
@@ -33,13 +31,11 @@
           </div>
         </div>
       </div>
-      <div class="reveal delay2">
-        <span class="kicker" style="color: #5dd7ff">Analytics (Business Intelligence)</span>
-        <h2>Lihat kesehatan bisnis di balik setiap surat jalan.</h2>
+      <div class="reveal delay1">
+        <span class="kicker" style="color: #5dd7ff">BUSINESS ANALYTICS</span>
+        <h2>Lihat kesehatan margin dari setiap surat jalan pengiriman.</h2>
         <p>
-          Anda sedang duduk di pucuk pimpinan. Jangan menebak-nebak kondisi margin.
-          Akses ringkasan visual mendalam atas pendapatan, pengiriman, pemenuhan SLA 
-          hingga struktur margin kotor profit dalam satu klik.
+          Ekstrak insight operasional secara otomatis. Dapatkan laporan grafik atas tren kenaikan volume Anda serta profitabilitas antar rute yang sangat lengkap.
         </p>
       </div>
     </div>
@@ -50,16 +46,16 @@
 .dashboard-section {
   background: #07172b;
   color: white;
-  padding-bottom: 120px;
+  padding-top: 100px;
 }
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 65px;
   align-items: center;
 }
 .dashboard-section h2 {
-  font: 800 39px/1.15 Manrope;
+  font: 800 34px/1.2 Manrope;
   letter-spacing: -1.5px;
 }
 .dashboard-section p {
@@ -69,7 +65,6 @@
   margin-top: 20px;
 }
 .dash-large {
-  height: 385px;
   border: 1px solid #1b3859;
   background: #0a1d34;
   border-radius: 15px;
@@ -79,30 +74,32 @@
 .dash-top {
   height: 40px;
   border-bottom: 1px solid #1b3552;
-  padding: 0 14px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  font-size: 9px;
-}
-.dash-top span {
-  margin-left: auto;
-  color: #7891ad;
+  font-size: 11px;
 }
 .dash-content {
-  padding: 18px;
+  padding: 24px;
+}
+.sample-label {
+  font-size: 9px;
+  color: #5b7999;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .dark-metrics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 .dark-metric {
-  flex: 1;
-  padding: 12px;
+  padding: 20px;
   border: 1px solid #183a5b;
   background: #0f2944;
-  border-radius: 8px;
-  min-width: 90px;
+  border-radius: 10px;
 }
 .dark-metric.highlight {
   background: #113f28;
@@ -112,25 +109,26 @@
 .dark-metric small {
   display: block;
   color: #8199b3;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .dark-metric.highlight small { color: #80c8a6; }
 .dark-metric b {
-  font-size: 17px;
+  font-size: 24px;
   font-weight: 800;
+  font-family: Manrope;
 }
 .dark-chart {
-  height: 190px;
+  height: 130px;
   margin-top: 15px;
   display: flex;
   align-items: end;
   gap: 8px;
   border: 1px solid #183653;
   background: #0d243d;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 16px;
 }
 .dark-chart i {
@@ -146,15 +144,11 @@
 }
 @media (max-width: 600px) {
   .dark-metrics {
-    gap: 7px;
+    gap: 8px;
   }
   .dark-metric {
-    min-width: 80px;
-    padding: 8px;
+    padding: 15px;
   }
-  .dark-metric b { font-size: 13px; }
-  .dash-large {
-    height: 340px;
-  }
+  .dark-metric b { font-size: 20px; }
 }
 </style>
