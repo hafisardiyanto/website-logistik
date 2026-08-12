@@ -2,7 +2,7 @@
   <div class="trust">
     <div class="container center">
       <div class="reveal">
-        <span class="trust-pill">Built for modern logistics operations</span>
+        <span class="trust-pill">Built around real logistics workflows.</span>
         <div class="domains">
           <span>TRUCKING</span><span class="dot">•</span>
           <span>3PL</span><span class="dot">•</span>
@@ -10,7 +10,6 @@
           <span>WAREHOUSE</span><span class="dot">•</span>
           <span>FREIGHT FORWARDING</span>
         </div>
-        <p>Dirancang khusus untuk perusahaan logistik yang membutuhkan visibilitas operasional penuh.</p>
       </div>
     </div>
   </div>
@@ -24,9 +23,9 @@
   background: #fafcff;
 }
 .trust-pill {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #798ba0;
   font-weight: 800;
   display: block;
@@ -46,12 +45,6 @@
 }
 .dot {
   color: #cbd8e8;
-}
-.trust p {
-  font-size: 14px;
-  color: var(--muted);
-  margin: 30px auto 0;
-  max-width: 500px;
 }
 
 @media (max-width: 600px) {

@@ -1,105 +1,119 @@
 <template>
-  <footer>
+  <footer class="footer">
     <div class="container footer-grid">
-      <div>
-        <a class="logo" href="#home">
+      
+      <div class="foot-brand">
+        <div class="logo">
           <span class="logo-mark">◆</span>
-          <span><b style="color: white">LOGISTIQ</b><small>Platform Operasional Logistik</small></span>
-        </a>
-        <p>Operasi logistik yang saling terhubung kokoh untuk kemajuan bisnis modern.</p>
+          <span><b>LOGISTIQ</b></span>
+        </div>
+        <p>Sistem operasi logistik enterprise untuk perusahaan modern. Kelola order, tracking, biaya, dan tagihan dalam satu tempat.</p>
+        <div class="socials">
+          <span>in</span>
+          <span>fb</span>
+          <span>tw</span>
+        </div>
       </div>
-      <div>
-        <h4>Produk</h4>
-        <a href="#features">Fitur</a><a href="#dashboard">Dasbor Manajemen</a>
-        <a href="#pricing">Harga</a><a href="#workflow">Cara Kerjanya</a>
+      
+      <div class="foot-links">
+        <b>Product</b>
+        <a href="#">Dashboard</a>
+        <a href="#">Job Order</a>
+        <a href="#">Delivery Order</a>
+        <a href="#">Manifest</a>
+        <a href="#">Tracking</a>
+        <a href="#pricing">Pricing</a>
       </div>
-      <div>
-        <h4>Perusahaan</h4>
-        <a href="#about">Tentang Kami</a><a href="#contact">Kontak CS</a>
-        <a href="#">Privasi & Keamanan</a><a href="#">Dokumentasi API</a>
+      
+      <div class="foot-links">
+        <b>Solutions</b>
+        <a href="#">Trucking</a>
+        <a href="#">3PL</a>
+        <a href="#">Distribution</a>
+        <a href="#">Warehouse</a>
       </div>
-      <div>
-        <h4>Informasi Kontak Pusat</h4>
-        <p>hello@logistiq.co</p>
-        <p>+62 811-1234-5678</p>
-        <p>Gedung Logistik, Surabaya, Indonesia</p>
+      
+      <div class="foot-links">
+        <b>Company</b>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
       </div>
+      
+      <div class="foot-links">
+        <b>Resources</b>
+        <a href="#">Documentation</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      
     </div>
-    <div class="container copyright">
-      © 2026 LOGISTIQ · Privasi Pengguna · Syarat Ketentuan Layanan · Keamanan Siber
+    
+    <div class="container foot-bottom">
+      <span>&copy; {{ new Date().getFullYear() }} LOGISTIQ Inc. All rights reserved.</span>
     </div>
   </footer>
 </template>
 
 <style scoped>
-footer {
-  background: #06101f;
-  color: #91a4bd;
-  padding: 52px 0 18px;
+.footer {
+  background: white;
+  border-top: 1px solid #e1e9f4;
+  padding: 80px 0 30px;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.logo-mark {
-  width: 37px;
-  height: 37px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #1257d4, #66d2ff);
-  display: grid;
-  place-items: center;
-  color: #fff;
-  box-shadow: 0 9px 22px #1768e82e;
-}
-.logo b {
-  font: 800 16px Manrope;
-  letter-spacing: -0.5px;
-}
-.logo small {
-  display: block;
-  color: #8492a5;
-  font-size: 8px;
-  margin-top: 2px;
-}
-
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
-  gap: 45px;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 40px;
 }
-.footer-grid h4 {
-  font-size: 11px;
-  color: white;
-  margin-top: 0;
-}
-.footer-grid a,
-.footer-grid p {
-  font-size: 9px;
+.foot-brand p {
+  font-size: 12px;
   line-height: 1.8;
-  display: block;
-  margin: 7px 0;
+  color: var(--muted);
+  margin: 20px 0;
+  max-width: 250px;
 }
-.copyright {
-  border-top: 1px solid #ffffff12;
-  margin-top: 30px;
-  padding-top: 18px;
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: linear-gradient(135deg, #1257d4, #66d2ff);
+  display: grid; place-items: center; color: white; font-size: 14px;
+}
+.logo b { font: 800 18px Manrope; letter-spacing: -0.5px; color: var(--ink); }
+.socials { display: flex; gap: 10px; }
+.socials span {
+  width: 32px; height: 32px; border-radius: 6px;
+  background: #f0f4f9; display: grid; place-items: center;
+  font-size: 12px; font-weight: 700; color: #8fa4b9; cursor: pointer; transition: 0.2s;
+}
+.socials span:hover { background: var(--blue); color: white; }
+
+.foot-links b {
+  display: block; font-size: 12px; font-weight: 800;
+  color: var(--ink); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.foot-links a {
+  display: block; font-size: 13px; color: var(--muted);
+  margin-bottom: 15px; text-decoration: none; transition: 0.2s;
+}
+.foot-links a:hover { color: var(--blue); transform: translateX(3px); }
+
+.foot-bottom {
+  border-top: 1px solid #edf2f8;
+  margin-top: 60px;
+  padding-top: 30px;
+  font-size: 12px;
+  color: #aebfd1;
   text-align: center;
-  font-size: 8px;
 }
 
 @media (max-width: 950px) {
-  .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-  .footer-grid > div:last-child {
-    grid-column: 1/-1;
-  }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 20px; }
+  .foot-brand { grid-column: span 2; }
 }
 @media (max-width: 600px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .foot-brand { grid-column: span 2; }
 }
 </style>

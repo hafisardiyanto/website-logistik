@@ -8,27 +8,22 @@
       <div class="reasons-grid">
         <div class="reason reveal">
           <span class="num">01</span>
-          <h3>Dibangun untuk workflow logistik</h3>
-          <p>Bukan software generik (HR/Sales) yang fiturnya dipaksakan ke operasi distribusi logistik Anda.</p>
+          <h3>One source of truth</h3>
+          <p>Semua proses logistik dan pengiriman (mulai dari Job Order hingga tagihan bersih) saling terhubung tersentralisasi sepenuhnya.</p>
         </div>
         <div class="reason reveal delay1">
           <span class="num">02</span>
-          <h3>Satu sumber data</h3>
-          <p>Job Order, DO, Manifest, Shipment, Cost, dan Billing semuanya saling terhubung instan.</p>
+          <h3>Built for real operations</h3>
+          <p>Sistem merangkul fakta lapangan. Workflow dirancang secara murni dan eksklusif berdasarkan studi kasus operasional nyata Anda.</p>
         </div>
         <div class="reason reveal delay2">
           <span class="num">03</span>
-          <h3>Operational visibility</h3>
-          <p>Semua status pelacakan dapat dipantau dari satu platform komando oleh manajemen.</p>
-        </div>
-        <div class="reason reveal delay3">
-          <span class="num">04</span>
-          <h3>Scalable Ecosystem</h3>
-          <p>Cocok mulai dari logistik satu cabang kecil hingga ke raksasa multi-branch operation.</p>
+          <h3>From operations to profitability</h3>
+          <p>Tidak hanya sekadar menandai titik GPS muatan, tetapi menghubungkannya untuk memahami beban biaya (Cost) riil Anda.</p>
         </div>
       </div>
 
-      <div class="tech-box reveal">
+      <div class="tech-box reveal delay1">
         <div class="tech-col">
           <div class="icon-head">🛡️ SECURITY</div>
           <ul>
@@ -55,16 +50,16 @@
 <style scoped>
 .reasons-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   margin-top: 40px;
 }
 .reason {
-  background: #fcfdfe;
-  border-top: 3px solid var(--blue);
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 25px #123d7008;
+  background: white;
+  border-top: 4px solid var(--blue);
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(12,45,86,0.04);
 }
 .num {
   font-family: inherit;
@@ -72,17 +67,18 @@
   font-weight: 800;
   color: #aebfd1;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .reason h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 .reason p {
-  font-size: 11px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.8;
   color: var(--muted);
+  margin: 0;
 }
 
 .tech-box {
@@ -93,6 +89,7 @@
   margin-top: 60px;
   color: white;
   overflow: hidden;
+  box-shadow: 0 20px 50px rgba(9, 26, 49, 0.4);
 }
 .tech-col {
   padding: 40px;
@@ -129,12 +126,9 @@
 }
 
 @media (max-width: 950px) {
-  .reasons-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .reasons-grid { grid-template-columns: 1fr; gap: 15px;}
 }
 @media (max-width: 600px) {
-  .reasons-grid { grid-template-columns: 1fr; }
   .tech-box { grid-template-columns: 1fr; }
   .tech-col { border-right: 0; border-bottom: 1px solid #1a2f4c; padding: 30px; }
 }
