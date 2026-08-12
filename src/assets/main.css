@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap");
+
+:root {
+  --navy: #06101f;
+  --navy2: #0a1b31;
+  --blue: #1768e8;
+  --cyan: #5dd7ff;
+  --ink: #091a31;
+  --muted: #718096;
+  --line: #e6edf5;
+  --soft: #f6f9fd;
+  --green: #12a875;
+  --red: #e85d6a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  background: #fff;
+}
+
+body.login-open {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 17px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.blue {
+  color: white;
+  background: var(--blue);
+  box-shadow: 0 8px 22px #1768e82e;
+}
+
+.outline {
+  background: white;
+  color: var(--blue);
+  border: 1px solid #cbdcf0;
+}
+
+.dark {
+  background: #081a31;
+  color: white;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #eef6ff;
+  border: 1px solid #d3e4f8;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.section {
+  padding: 92px 0;
+}
+
+.alt {
+  background: var(--soft);
+}
+
+.head {
+  max-width: 710px;
+  margin: 0 auto 43px;
+}
+
+.head.center {
+  text-align: center;
+}
+
+.kicker {
+  font-size: 10px;
+  color: var(--blue);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.head h2 {
+  font: 800 37px/1.15 Manrope;
+  letter-spacing: -1.5px;
+  margin: 11px 0;
+}
+
+.head p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.full {
+  width: 100%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+.delay1 {
+  transition-delay: 0.08s;
+}
+
+.delay2 {
+  transition-delay: 0.16s;
+}
+
+.delay3 {
+  transition-delay: 0.24s;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 65px 0;
+  }
+  .head h2,
+  .dashboard-section h2,
+  .about-copy h2,
+  .contact-copy h2 {
+    font-size: 29px;
+  }
+}
