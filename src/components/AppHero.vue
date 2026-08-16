@@ -2,18 +2,14 @@
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="reveal">
-        <span class="pill-sm">Software Manajemen Logistik</span>
-        <h1>Kendalikan Seluruh Operasi Logistik Anda dalam <br><span>Satu Platform.</span></h1>
+        
+        <h1 style="font-size:42px; font-weight: 800; font-family: Manrope; margin-bottom:15px;">Kelola Seluruh Operasional Logistik. Dari Order hingga Profit.</h1>
         <p>
           Dari Order → Planning → Dispatch → Tracking → Delivery → Billing → Profitability, LOGISTIQ menyatukan seluruh operasional logistik dalam satu sistem.
         </p>
         <div class="actions">
-          <button class="btn blue btn-lg cta-btn shadow" @click="scrollToId('contact')">
-            Jadwalkan Demo
-          </button>
-          <a class="btn outline btn-lg cta-btn btn-secondary" href="#product">
-            Lihat Produk →
-          </a>
+          <button class="btn blue btn-lg cta-btn shadow" @click="scrollToId('contact')">Request a Demo</button>
+          <a class="btn outline btn-lg cta-btn btn-secondary" href="#product">Explore Platform</a>
         </div>
       </div>
       

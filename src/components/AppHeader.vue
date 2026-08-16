@@ -1,17 +1,17 @@
 <template>
   <header class="nav" :class="{ 'is-scrolled': isScrolled }">
     <div class="container">
-      <a href="#home" class="logo">
+      <router-link to="/" class="logo">
         <span class="logo-mark">◆</span>
         <span><b>LOGISTIQ</b></span>
-      </a>
+      </router-link>
       <button class="hamb" @click="toggleNav">☰</button>
       <nav class="links" id="links" :style="{ display: navOpen ? 'flex' : '' }">
-        <a href="#product">Produk</a>
-        <a href="#solusi">Solusi</a>
-        <a href="#features">Fitur</a>
-        <a href="#pricing">Harga</a>
-        <a href="#about">Tentang</a>
+        <a href="/#product">Produk</a>
+        <a href="/#solutions">Solusi</a>
+        <a href="/#features">Fitur</a>
+        <a href="/#pricing">Harga</a>
+        <a href="/#about">Tentang</a>
       </nav>
       <div class="nav-buttons">
         <button class="btn clear" @click="$emit('open-login')">Masuk</button>

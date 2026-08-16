@@ -1,51 +1,45 @@
 <template>
-  <section class="section" id="why-us">
+  <section class="section" id="enterprise" style="background:#f9fafb; padding:100px 0;">
     <div class="container">
       <div class="head center reveal">
-        <h2>Mengapa LOGISTIQ?</h2>
+        <span style="font-weight:800; font-size:12px; letter-spacing:1px; color:#3b5998; text-transform:uppercase;">Enterprise Capability</span>
+        <h2 style="font-size:36px; font-weight:800; font-family:Manrope; margin: 10px 0;">Sistem tangguh untuk mengelola ratusan cabang.</h2>
+        <p style="color:var(--muted); font-size:16px; margin-top:10px; max-width:600px; margin-left:auto; margin-right:auto;">
+          Aman. Transparan. Dan mudah tersambung dengan ekosistem perangkat lunak perusahaan Anda.
+        </p>
       </div>
 
-      <div class="reasons-grid">
-        <div class="reason reveal">
-          <span class="num">01</span>
-          <h3>One source of truth</h3>
-          <p>Semua proses logistik dan pengiriman (mulai dari Job Order hingga tagihan bersih) saling terhubung tersentralisasi sepenuhnya.</p>
+      <div class="tech-box reveal delay1" style="margin-top:50px; background:white; border:1px solid #e1e7f0; border-radius:16px; box-shadow:0 15px 30px rgba(0,0,0,0.02); display:grid; grid-template-columns:repeat(2, 1fr); max-width:800px; margin-left:auto; margin-right:auto;">
+        
+        <div class="tech-col" style="padding:40px; border-right:1px solid #e1e7f0;">
+          <div class="icon-head" style="font-weight:800; color:var(--navy); font-size:15px; margin-bottom:20px;">🛡️ SECURITY & GOVERNANCE</div>
+          <ul style="list-style:none; padding:0; font-size:15px; color:var(--muted); line-height:2;">
+            <li style="margin-bottom:10px;">✓ Multi Branch & Multi Company</li>
+            <li style="margin-bottom:10px;">✓ Role-Based Access Control (RBAC)</li>
+            <li style="margin-bottom:10px;">✓ Audit Trail (Log Aktivitas User)</li>
+            <li>✓ Approval Workflow Berjenjang</li>
+          </ul>
         </div>
-        <div class="reason reveal delay1">
-          <span class="num">02</span>
-          <h3>Built for real operations</h3>
-          <p>Sistem merangkul fakta lapangan. Workflow dirancang secara murni dan eksklusif berdasarkan studi kasus operasional nyata Anda.</p>
+        
+        <div class="tech-col" style="padding:40px;">
+          <div class="icon-head" style="font-weight:800; color:var(--navy); font-size:15px; margin-bottom:20px;">🔗 INTEGRATION & API</div>
+          <ul style="list-style:none; padding:0; font-size:15px; color:var(--muted); line-height:2;">
+            <li style="margin-bottom:10px;">✓ Dokumentasi API Terbuka</li>
+            <li style="margin-bottom:10px;">✓ Custom ERP Integration (SAP, Odoo, dll)</li>
+            <li style="margin-bottom:10px;">✓ Bank & Payment Gateway Integration</li>
+            <li>✓ Webhook Notification Engine</li>
+          </ul>
         </div>
-        <div class="reason reveal delay2">
-          <span class="num">03</span>
-          <h3>From operations to profitability</h3>
-          <p>Tidak hanya sekadar menandai titik GPS muatan, tetapi menghubungkannya untuk memahami beban biaya (Cost) riil Anda.</p>
-        </div>
-      </div>
 
-      <div class="tech-box reveal delay1">
-        <div class="tech-col">
-          <div class="icon-head">🛡️ SECURITY</div>
-          <ul>
-            <li>Role-Based Access Control</li>
-            <li>Audit Trail (Log aktivitas)</li>
-            <li>Data Protection Enkripsi</li>
-            <li>Secure Authentication</li>
-          </ul>
-        </div>
-        <div class="tech-col">
-          <div class="icon-head">🔗 INTEGRATION</div>
-          <ul>
-            <li>REST API Terbuka</li>
-            <li>Webhook Engine</li>
-            <li>ERP Integration</li>
-            <li>WMS & Payment Integration</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
 </template>
 
+<style scoped>
+@media (max-width: 650px) {
+  .tech-box { grid-template-columns: 1fr !important; }
+  .tech-col:first-child { border-right: none !important; border-bottom: 1px solid #e1e7f0; }
+}
+</style>
 <style src="../assets/AppWhySecurity.css" scoped></style>
-

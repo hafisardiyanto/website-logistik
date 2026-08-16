@@ -1,52 +1,69 @@
 <template>
   <section class="section alt" id="about">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <span class="kicker" style="color: #5dd7ff">Tentang LOGISTIQ</span>
-          <h3>Dibangun di atas realita sesungguhnya dari operasi logistik.</h3>
-          <p>
-            LOGISTIQ dirancang khusus untuk memandu tim perusahan distribusi transportasi
-            dalam menggantikan cara-cara berantakan dengan suatu sistem operasi yang saling terhubung 
-            — dan kami melakukannya dengan tanpa membuat alur kerja Anda menjadi lebih berat.
-          </p>
-          <div class="values">
-            <div class="value">
-              <b>Visibilitas</b><span>Satu sumber data operasional utama yang transparan.</span>
-            </div>
-            <div class="value">
-              <b>Efisiensi</b><span>Terbebas secara dramatis dari pekerjaan manual atau rekonsiliasi.</span>
-            </div>
-            <div class="value">
-              <b>Kendali</b><span>Tanggungjawabnya nyata serta sangat bisa diandalkan pada setiap detailnya.</span>
-            </div>
-            <div class="value">
-              <b>Berskala</b><span>Infrastruktur stabil dan siap menemani kapasitas Anda yang makin bertambah!</span>
-            </div>
-          </div>
+      <div class="head center reveal">
+        <h2 style="font: 800 38px/1.2 Manrope; letter-spacing: -1px; margin-bottom:50px;">Built Around the Way Logistics Businesses Actually Work</h2>
+      </div>
+      
+      <div class="values-grid">
+        <div class="val-card reveal">
+          <div class="icon" style="background:#ebf4ff; color:var(--blue); font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">♾️</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">End-to-End</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Dari order hingga tuntas terangkum di invoice.</p>
         </div>
-        <div class="about-copy reveal delay2">
-          <span class="kicker">Pendekatan Kami</span>
-          <h2>
-            Teknologi semestinya membantu Anda menjadi simpel, bukan malah membuat kerumitan baru lagi.
-          </h2>
-          <p>
-            Kami fokus pada kepraktisan alur kerja, data yang jelas, serta sebuah tatap muka perangkat lunak canggih yang membantu pihak manajemen, kru administrasi surat, departemen pendanaan (finance) serta jajaran yang mengawasi gudang dapat berkolaborasi langsung menggunakan informasi yang sama.
-          </p>
-          <p>
-            Mulai dari Pesanan Pelanggan hingga pada bukti Penagihan dan pelunasannya, modul terhubung ini sangat memastikan tiap armada dan personel bekerja dengan rasa yang lebih mantap.
-          </p>
-          <div class="stats4">
-            <div class="stat"><b>1</b><span>Platform Tunggal</span></div>
-            <div class="stat"><b>24/7</b><span>Visibilitas</span></div>
-            <div class="stat"><b>API</b><span>Terbuka (Ready)</span></div>
-            <div class="stat"><b>∞</b><span>Skalabilitas Ekstrem</span></div>
-          </div>
+        
+        <div class="val-card reveal delay1">
+          <div class="icon" style="background:#e4f8f0; color:var(--green); font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">👁️</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">Real-Time Visibility</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Pantau operasional tanpa menunggu laporan manual.</p>
+        </div>
+        
+        <div class="val-card reveal delay2">
+          <div class="icon" style="background:#ffeeef; color:var(--red); font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">💸</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">Cost Control</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Ketahui setiap pergerakan biaya pasti pada tiap pengiriman.</p>
+        </div>
+
+        <div class="val-card reveal">
+          <div class="icon" style="background:#fffcf0; color:orange; font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">📈</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">Profitability</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Ketahui keuntungan nyata dari setiap satu dokumen Job Order.</p>
+        </div>
+
+        <div class="val-card reveal delay1">
+          <div class="icon" style="background:#f4f4fa; color:#625bbb; font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">🏢</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">Multi-Branch</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Kelola operasional dan performa dari berbagai lokasi cabang.</p>
+        </div>
+
+        <div class="val-card reveal delay2">
+          <div class="icon" style="background:#eaf2f8; color:var(--navy); font-size:24px; border-radius:12px; width:50px; height:50px; display:flex; align-items:center; justify-content:center; margin-bottom:15px;">⚙️</div>
+          <h3 style="font: 800 18px Manrope; margin-bottom:8px;">Enterprise Ready</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.6;">Diperkuat role, permission, approval, audit log, & integrasi API.</p>
         </div>
       </div>
     </div>
   </section>
 </template>
 
+<style scoped>
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.val-card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+}
+@media (max-width: 850px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
+</style>
 <style src="../assets/AppAbout.css" scoped></style>
-

@@ -1,30 +1,16 @@
+
 <template>
-  <div class="trust">
+  <section class="section" id="trust" style="padding: 60px 0; background: white; border-bottom: 1px solid #e1e7f0;">
     <div class="container center">
       <div class="reveal">
-        <span class="trust-pill">Telah dipercaya oleh operasi logistik modern.</span>
-        <div class="metrics">
-          <div class="metric">
-            <b>1,000+</b>
-            <span>Shipment Managed</span>
-          </div>
-          <div class="metric">
-            <b>50+</b>
-            <span>Active Users</span>
-          </div>
-          <div class="metric">
-            <b>98.6%</b>
-            <span>SLA Achievement</span>
-          </div>
-          <div class="metric">
-            <b>24/7</b>
-            <span>Operational Visibility</span>
-          </div>
+        <p style="font-size:14px; font-weight:800; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:20px;">Built for Modern Logistics Operations</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:40px; flex-wrap:wrap; opacity:0.6; filter:grayscale(100%);">
+           <!-- Placeholder for actual integrations or real ecosystem logos -->
+           <span style="font-weight:700; font-size:18px;">[ ERP INTEGRATION READY ]</span>
+           <span style="font-weight:700; font-size:18px;">[ MULTI-BRANCH CAPABLE ]</span>
+           <span style="font-weight:700; font-size:18px;">[ SECURE INFRASTRUCTURE ]</span>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
-
-<style src="../assets/AppTrust.css" scoped></style>
-
