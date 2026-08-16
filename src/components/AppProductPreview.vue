@@ -11,28 +11,46 @@
       </div>
       
       <div class="product-tabs reveal delay1" style="margin-top: 40px;">
+         
          <div class="tabs-header" style="display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom:30px;">
-            <button class="tab-btn active">Dashboard</button>
-            <button class="tab-btn">Customer</button>
-            <button class="tab-btn">Job Order</button>
-            <button class="tab-btn">Manifest</button>
-            <button class="tab-btn">Delivery</button>
-            <button class="tab-btn">Tracking</button>
-            <button class="tab-btn">Invoice</button>
-            <button class="tab-btn">Profit & Loss</button>
+            <button v-for="tab in tabs" :key="tab.id" :class="['tab-btn', activeTab === tab.id ? 'active' : '']" @click="switchTab(tab)">
+              {{ tab.name }}
+            </button>
          </div>
-         <div class="tab-content" style="background:#0f2944; border:1px solid #183a5b; border-radius:16px; min-height:450px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 30px 60px rgba(0,0,0,0.5); padding:20px;">
-            <!-- INSTRUCTION FOR USER: DROP ACTUAL UI SCREENSHOTS HERE -->
-            <img src="" alt="LOGISTIQ logistics management dashboard showing shipment, revenue, cost and profit performance" style="max-width:100%; border-radius:8px; display:none;" />
-            <div style="color:var(--blue); opacity:0.8; font-weight:700; font-size:16px; border:2px dashed var(--blue); padding:40px; border-radius:12px; width:100%; text-align:center;">
-               [ REQUIRED: DROP ACTUAL UI SCREENSHOT HERE ]<br>
-               <span style="font-size:13px; font-weight:400; color:#abc; display:block; margin-top:10px;">Please set src="/assets/your-actual-dashboard.png" in the codebase before going to production.</span>
-            </div>
+
+         
+         <div class="tab-content" style="background:#0f2944; border:1px solid #183a5b; border-radius:16px; min-height:450px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 30px 60px rgba(0,0,0,0.5); padding:20px; width: 100%; max-width: 900px; margin: 0 auto; overflow:hidden;">
+            <!-- UI Visualizer -->
+            <img :src="currentImg" :alt="currentAlt" style="width:100%; max-width:100%; border-radius:8px; display:block; object-fit: cover;" @error="$event.target.src='https://placehold.co/900x500/0f2944/5dd7ff.png?text=LOGISTIQ+'+activeTab+'+UI'" />
          </div>
       </div>
     </div>
   </section>
 </template>
+
+
+<script setup>
+import { ref } from 'vue'
+
+const activeTab = ref('dashboard')
+
+// NOTE: Ensure generated/uploaded files exist at /public/assets/dashboard.png etc. 
+const tabs = [
+  { id: 'dashboard', name: 'Dashboard', img: '/assets/dashboard-mockup.png', alt: 'LOGISTIQ logistics management dashboard showing shipment, revenue, cost and profit performance' },
+  { id: 'job-order', name: 'Job Order', img: '/assets/joborder-mockup.png', alt: 'LOGISTIQ Job Order creation and scheduling interface' },
+  { id: 'tracking', name: 'Tracking', img: '/assets/tracking-mockup.png', alt: 'LOGISTIQ live driver tracking and delivery mapping' },
+  { id: 'profit', name: 'Profit & Loss', img: '/assets/profit-mockup.png', alt: 'LOGISTIQ real-time operational cost and profit analytic charts' }
+]
+
+const currentAlt = ref(tabs[0].alt)
+const currentImg = ref(tabs[0].img)
+
+const switchTab = (tab) => {
+  activeTab.value = tab.id
+  currentImg.value = tab.img
+  currentAlt.value = tab.alt
+}
+</script>
 
 <style scoped>
 .tab-btn {

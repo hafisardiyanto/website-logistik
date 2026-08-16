@@ -48,11 +48,47 @@
   </section>
 </template>
 
+
 <script setup>
-const submitContact = () => {
-  alert("Terima kasih! Permintaan demo perangkat lunak Anda berhasil dikirim (UI Sandbox).");
+import { ref } from 'vue'
+
+const isSubmitting = ref(false)
+const isSuccess = ref(false)
+const errorMessage = ref('')
+
+const formData = ref({
+  name: '',
+  email: '',
+  company: '',
+  phone: '',
+  btype: 'Transportation',
+  message: ''
+})
+
+const submitForm = async () => {
+  isSubmitting.value = true
+  errorMessage.value = ''
+  
+  try {
+     const res = await fetch('https://logistiq.id/api/contact', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       body: JSON.stringify(formData.value)
+     })
+     
+     // Success simulation
+     setTimeout(() => {
+        isSubmitting.value = false
+        isSuccess.value = true
+        formData.value = { name: '', email: '', company: '', phone: '', btype: 'Transportation', message: '' }
+     }, 1500)
+  } catch (err) {
+     isSubmitting.value = false
+     errorMessage.value = 'Mohon maaf, terjadi kesalahan jaringan pada sistem. Silakan coba kembali.'
+  }
 }
 </script>
+
 
 <style src="../assets/AppContact.css" scoped></style>
 
