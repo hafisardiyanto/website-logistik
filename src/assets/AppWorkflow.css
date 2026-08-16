@@ -1,0 +1,61 @@
+.workflow-stage {
+  background: white;
+}
+.workflow-pad {
+  overflow-x: auto;
+  padding: 20px 0 30px;
+  /* Hide scrollbar for cleaner look */
+  scrollbar-width: thin;
+  scrollbar-color: #d1d8e1 transparent;
+}
+.flow-track {
+  display: flex;
+  gap: 12px;
+  min-width: 1400px; /* Force horizontal scrolling if container is small */
+  padding: 0 10px;
+}
+.flow-item {
+  flex: 1;
+  background: #fdfdfe;
+  border: 1px solid #ebf0f7;
+  padding: 22px 18px;
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.flow-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px #123d700d;
+  border-color: #d3e1f2;
+}
+.flow-num {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--blue);
+  background: #eef5ff;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.flow-item h3 {
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.flow-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+.flow-arrow {
+  position: absolute;
+  right: -13px;
+  top: 40px;
+  color: #c7d5e4;
+  font-family: Arial;
+  font-size: 18px;
+}

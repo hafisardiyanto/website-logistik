@@ -1,0 +1,28 @@
+.faq-section {
+  background: white;
+}
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 25px 0;
+}
+.faq-item:first-child {
+  border-top: 1px solid var(--line);
+}
+.faq-item b {
+  font-size: 19px;
+  font-weight: 800;
+  font-family: Manrope;
+  display: block;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 0;
+}

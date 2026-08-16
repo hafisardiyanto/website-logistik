@@ -1,0 +1,49 @@
+.tech-section {
+  padding-top: 10px;
+}
+.stats4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 15px 40px #123d7008;
+}
+.stat {
+  text-align: center;
+  padding: 35px 20px;
+  border-right: 1px solid var(--line);
+}
+.stat:last-child {
+  border: 0;
+}
+.icon-wrap {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.stat b {
+  font: 800 22px Manrope;
+  display: block;
+}
+.stat span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+@media (max-width: 950px) {
+  .stats4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat {
+    border-bottom: 1px solid var(--line);
+  }
+}
+@media (max-width: 600px) {
+  .stats4 {
+    grid-template-columns: 1fr;
+  }
+}

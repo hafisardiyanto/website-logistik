@@ -1,0 +1,29 @@
+.solution-wrap {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #091a31, #06101f);
+  color: white;
+  text-align: center;
+}
+.container-sm {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.big-statement {
+  font: 800 62px/1.1 Manrope;
+  letter-spacing: -2px;
+  margin: 0 0 25px;
+}
+.big-statement span {
+  color: var(--cyan);
+}
+.solution-wrap p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #9ab0c5;
+}
+
+@media (max-width: 600px) {
+  .big-statement {
+    font-size: 46px;
+  }
+}
