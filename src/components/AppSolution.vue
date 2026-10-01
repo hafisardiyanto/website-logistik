@@ -46,9 +46,4 @@
   </section>
 </template>
 
-<style scoped>
-@media (max-width: 800px) {
-  .mobile-break { display: block; width: 100%; height: 0; }
-  span { display:none; }
-}
-</style>
+

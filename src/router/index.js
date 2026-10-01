@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SeoPageTemplate from '../views/SeoPageTemplate.vue'
 
+// Admin Views
+import AdminLayout from '../views/admin/AdminLayout.vue'
+import AdminDashboard from '../views/admin/AdminDashboard.vue'
+import AdminLogin from '../views/admin/AdminLogin.vue'
+
 const routes = [
   { path: '/', name: 'home', component: HomeView, meta: { title: 'LOGISTIQ | Platform Manajemen Logistik & Pengiriman', desc: 'LOGISTIQ adalah platform manajemen logistik dan pengiriman terintegrasi untuk mengelola customer, order, jadwal armada, tracking, invoice, biaya, dan profit.' } },
   { path: '/aplikasi-pengiriman', component: SeoPageTemplate, meta: { title: 'Aplikasi Pengiriman Barang | LOGISTIQ', desc: 'LOGISTIQ adalah aplikasi pengiriman barang untuk mengelola customer, order, jadwal pengiriman, armada, tracking, invoice, biaya, dan profit dalam satu platform.' } },
@@ -18,7 +23,22 @@ const routes = [
   { path: '/contact', component: SeoPageTemplate, meta: { title: 'Kontak LOGISTIQ | LOGISTIQ', desc: 'Hubungi tim ahli logistik kami untuk memulai uji coba demonstrasi (Request Demo) hari ini.' } },
   { path: '/blog', component: SeoPageTemplate, meta: { title: 'Logistics Blog & Insights | LOGISTIQ', desc: 'Baca panduan ahli mengenai TMS, rasio laba logistik, dan pengelolaan supir truk.' } },
   { path: '/privacy-policy', component: SeoPageTemplate, meta: { title: 'Privacy Policy | LOGISTIQ', desc: 'Kebijakan privasi bagaimana platform LOGISTIQ mengelola data berharga korporat Anda secara rahasia dan aman.' } },
-  { path: '/terms-of-service', component: SeoPageTemplate, meta: { title: 'Terms of Service | LOGISTIQ', desc: 'Syarat dan Ketentuan layanan perangkat lunak (SaaS) LOGISTIQ untuk operasi Anda.' } }
+  { path: '/terms-of-service', component: SeoPageTemplate, meta: { title: 'Terms of Service | LOGISTIQ', desc: 'Syarat dan Ketentuan layanan perangkat lunak (SaaS) LOGISTIQ untuk operasi Anda.' } },
+
+  // Admin Routes
+  { path: '/admin/login', name: 'adminLogin', component: AdminLogin, meta: { title: 'Admin Login | LOGISTIQ', desc: 'CMS Login for Admin' } },
+  {
+    path: '/admin',
+    component: AdminLayout,
+    meta: { requiresAuth: true },
+    children: [
+      { path: '', redirect: '/admin/dashboard' },
+      { path: 'dashboard', name: 'adminDashboard', component: AdminDashboard, meta: { title: 'Admin Dashboard | LOGISTIQ' } },
+      { path: 'services', name: 'adminServices', component: AdminDashboard, meta: { title: 'Manage Services | LOGISTIQ' } },
+      { path: 'settings', name: 'adminSettings', component: AdminDashboard, meta: { title: 'Settings | LOGISTIQ' } },
+      { path: 'orders', name: 'adminOrders', component: AdminDashboard, meta: { title: 'Job Orders | LOGISTIQ' } }
+    ]
+  }
 ]
 
 const router = createRouter({
@@ -36,7 +56,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   // 1. Title
   document.title = to.meta.title || 'LOGISTIQ';
-  
+
   // 2. Meta Description
   let metaDesc = document.querySelector('meta[name="description"]');
   if (!metaDesc) {
@@ -56,6 +76,14 @@ router.beforeEach((to, from, next) => {
   // Construct production URL
   const pathPart = to.path === '/' ? '' : to.path;
   linkCanonical.setAttribute('href', 'https://logistiq.id' + pathPart);
+
+  // 4. Admin Guard
+  if (to.meta.requiresAuth) {
+    const isAuthenticated = localStorage.getItem('adminAuth') === 'true';
+    if (!isAuthenticated) {
+      return next('/admin/login');
+    }
+  }
 
   next();
 })

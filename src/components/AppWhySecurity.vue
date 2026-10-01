@@ -36,10 +36,5 @@
   </section>
 </template>
 
-<style scoped>
-@media (max-width: 650px) {
-  .tech-box { grid-template-columns: 1fr !important; }
-  .tech-col:first-child { border-right: none !important; border-bottom: 1px solid #e1e7f0; }
-}
-</style>
+
 <style src="../assets/AppWhySecurity.css" scoped></style>

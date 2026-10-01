@@ -82,3 +82,8 @@
   .tech-box { grid-template-columns: 1fr; }
   .tech-col { border-right: 0; border-bottom: 1px solid #1a2f4c; padding: 30px; }
 }
+
+@media (max-width: 650px) {
+  .tech-box { grid-template-columns: 1fr !important; }
+  .tech-col:first-child { border-right: none !important; border-bottom: 1px solid #e1e7f0; }
+}

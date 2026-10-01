@@ -33,12 +33,4 @@ onMounted(() => {
   <AppLogin :is-open="showLogin" @close-login="showLogin = false" />
 </template>
 
-<style>
-.scroll-progress {
-  position: fixed;
-  top: 0; left: 0; height: 2px;
-  background: var(--blue);
-  z-index: 10000;
-  transition: width 0.1s ease-out;
-}
-</style>
+

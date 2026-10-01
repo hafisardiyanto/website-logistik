@@ -44,38 +44,4 @@
   </section>
 </template>
 
-<style scoped>
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 50px;
-}
-.solution-card {
-  padding: 35px;
-  border: 1px solid var(--line);
-  background: white;
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-  border-color: #cbdcf0;
-}
-.icon {
-  font-size: 32px;
-}
-.learn-more {
-  display: inline-block;
-  margin-top: 20px;
-  color: var(--navy);
-  font-weight: 800;
-  font-size: 14px;
-}
-.learn-more:hover { color: var(--blue); }
 
-@media (max-width: 768px) {
-  .solutions-grid { grid-template-columns: 1fr; }
-}
-</style>

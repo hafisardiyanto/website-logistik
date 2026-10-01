@@ -34,3 +34,33 @@
 @media (max-width: 600px) {
   .features-list { grid-template-columns: 1fr; }
 }
+
+.layers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.layer-card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+.layer-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--navy);
+  font-weight: 600;
+}
+.layer-list li { margin-bottom: 6px; border-bottom:1px solid #f1f5f9; }
+.layer-list li::before { content: "✓ "; color: var(--blue); font-weight: bold; margin-right: 5px; }
+
+@media (max-width: 950px) {
+  .layers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .layers-grid { grid-template-columns: 1fr; }
+}

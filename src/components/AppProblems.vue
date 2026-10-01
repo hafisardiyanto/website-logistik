@@ -37,12 +37,5 @@
   </section>
 </template>
 
-<style scoped>
-@media (max-width: 950px) {
-  .cards-grid { grid-template-columns: repeat(2, 1fr) !important; }
-}
-@media (max-width: 600px) {
-  .cards-grid { grid-template-columns: 1fr !important; }
-}
-</style>
+
 <style src="../assets/AppProblems.css" scoped></style>

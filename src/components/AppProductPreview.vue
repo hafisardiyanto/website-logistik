@@ -52,23 +52,5 @@ const switchTab = (tab) => {
 }
 </script>
 
-<style scoped>
-.tab-btn {
-  background: transparent;
-  border: 1px solid #183a5b;
-  color: #7891ad;
-  padding: 10px 18px;
-  border-radius: 99px;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.tab-btn:hover { background: #0f2944; color: white; }
-.tab-btn.active {
-  background: var(--blue);
-  color: white;
-  border-color: var(--blue);
-}
-</style>
+
 <style src="../assets/AppProductPreview.css" scoped></style>
