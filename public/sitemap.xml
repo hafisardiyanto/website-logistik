@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://logistiq.id/</loc></url>
-  <url><loc>https://logistiq.id/aplikasi-pengiriman</loc></url>
-  <url><loc>https://logistiq.id/software-logistik</loc></url>
-  <url><loc>https://logistiq.id/software-trucking</loc></url>
-  <url><loc>https://logistiq.id/transportation</loc></url>
-  <url><loc>https://logistiq.id/freight-forwarding</loc></url>
+  <!-- Core Hub -->
+  <url>
+    <loc>https://logistiq.id/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Platform Modules -->
+  <url><loc>https://logistiq.id/platform/order-management</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/platform/transportation-management</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/platform/fleet-management</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/platform/warehouse-management</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/platform/tracking-pod</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Solutions -->
+  <url><loc>https://logistiq.id/solutions/logistics-freight</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/solutions/trucking</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/solutions/distribution</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/solutions/warehouse</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logistiq.id/solutions/manufacturing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Company & Resources -->
+  <url><loc>https://logistiq.id/integration</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://logistiq.id/security</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://logistiq.id/use-cases</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://logistiq.id/faq</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://logistiq.id/request-demo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>

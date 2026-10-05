@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /cdn-cgi/
 
-Sitemap: https://logistiq.com/sitemap.xml
+Sitemap: https://logistiq.id/sitemap.xml

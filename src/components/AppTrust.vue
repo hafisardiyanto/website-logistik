@@ -1,16 +1,36 @@
-
 <template>
-  <section class="section" id="trust" style="padding: 60px 0; background: white; border-bottom: 1px solid #e1e7f0;">
-    <div class="container center">
+  <section class="trust">
+    <div class="container text-center">
       <div class="reveal">
-        <p style="font-size:14px; font-weight:800; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:20px;">Built for Modern Logistics Operations</p>
-        <div style="display:flex; justify-content:center; align-items:center; gap:40px; flex-wrap:wrap; opacity:0.6; filter:grayscale(100%);">
-           <!-- Placeholder for actual integrations or real ecosystem logos -->
-           <span style="font-weight:700; font-size:18px;">[ ERP INTEGRATION READY ]</span>
-           <span style="font-weight:700; font-size:18px;">[ MULTI-BRANCH CAPABLE ]</span>
-           <span style="font-weight:700; font-size:18px;">[ SECURE INFRASTRUCTURE ]</span>
+        <span class="trust-kicker">ONE PLATFORM. COMPLETE VISIBILITY.</span>
+        <h2 class="trust-title">Satu Platform untuk Menghubungkan Seluruh Operasional Logistik</h2>
+        <p class="trust-desc">LOGISTIQ membantu tim operasional, fleet, warehouse, finance, dan management bekerja dengan data yang terhubung dalam satu platform.</p>
+      </div>
+      
+      <div class="trust-grid">
+        <div class="trust-item reveal delay1">
+          <div class="icon">🔄</div>
+          <b>End-to-End Operations</b>
+          <p>Kelola proses logistik mulai dari order hingga delivery dan billing.</p>
+        </div>
+        <div class="trust-item reveal delay2">
+          <div class="icon">📍</div>
+          <b>Real-Time Visibility</b>
+          <p>Pantau status shipment, armada, dan aktivitas operasional dalam satu tampilan.</p>
+        </div>
+        <div class="trust-item reveal delay3">
+          <div class="icon">💰</div>
+          <b>Cost & Profit Control</b>
+          <p>Hubungkan biaya operasional dengan revenue untuk gambaran net profitability.</p>
+        </div>
+        <div class="trust-item reveal delay4">
+          <div class="icon">📊</div>
+          <b>Data-Driven Management</b>
+          <p>Berikan management informasi yang lebih cepat untuk mengambil keputusan.</p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<style src="../assets/AppTrust.css" scoped></style>

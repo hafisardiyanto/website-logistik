@@ -1,40 +1,67 @@
 <template>
-  <section class="section" id="enterprise" style="background:#f9fafb; padding:100px 0;">
-    <div class="container">
-      <div class="head center reveal">
-        <span style="font-weight:800; font-size:12px; letter-spacing:1px; color:#3b5998; text-transform:uppercase;">Enterprise Capability</span>
-        <h2 style="font-size:36px; font-weight:800; font-family:Manrope; margin: 10px 0;">Sistem tangguh untuk mengelola ratusan cabang.</h2>
-        <p style="color:var(--muted); font-size:16px; margin-top:10px; max-width:600px; margin-left:auto; margin-right:auto;">
-          Aman. Transparan. Dan mudah tersambung dengan ekosistem perangkat lunak perusahaan Anda.
-        </p>
-      </div>
-
-      <div class="tech-box reveal delay1" style="margin-top:50px; background:white; border:1px solid #e1e7f0; border-radius:16px; box-shadow:0 15px 30px rgba(0,0,0,0.02); display:grid; grid-template-columns:repeat(2, 1fr); max-width:800px; margin-left:auto; margin-right:auto;">
+  <section class="security" id="security">
+    <div class="container container-lg">
+      <div class="sec-layout">
         
-        <div class="tech-col" style="padding:40px; border-right:1px solid #e1e7f0;">
-          <div class="icon-head" style="font-weight:800; color:var(--navy); font-size:15px; margin-bottom:20px;">🛡️ SECURITY & GOVERNANCE</div>
-          <ul style="list-style:none; padding:0; font-size:15px; color:var(--muted); line-height:2;">
-            <li style="margin-bottom:10px;">✓ Multi Branch & Multi Company</li>
-            <li style="margin-bottom:10px;">✓ Role-Based Access Control (RBAC)</li>
-            <li style="margin-bottom:10px;">✓ Audit Trail (Log Aktivitas User)</li>
-            <li>✓ Approval Workflow Berjenjang</li>
-          </ul>
+        <!-- Left: Image UI Background -->
+        <div class="sec-visual reveal">
+          <img src="/VisualUtama.jpg" alt="LOGISTIQ Security Operations Dashboard" class="img-security shadow-xl" />
         </div>
         
-        <div class="tech-col" style="padding:40px;">
-          <div class="icon-head" style="font-weight:800; color:var(--navy); font-size:15px; margin-bottom:20px;">🔗 INTEGRATION & API</div>
-          <ul style="list-style:none; padding:0; font-size:15px; color:var(--muted); line-height:2;">
-            <li style="margin-bottom:10px;">✓ Dokumentasi API Terbuka</li>
-            <li style="margin-bottom:10px;">✓ Custom ERP Integration (SAP, Odoo, dll)</li>
-            <li style="margin-bottom:10px;">✓ Bank & Payment Gateway Integration</li>
-            <li>✓ Webhook Notification Engine</li>
-          </ul>
+        <!-- Right: Content -->
+        <div class="sec-content">
+          <span class="sec-kicker reveal delay1">SECURITY & RELIABILITY</span>
+          <h2 class="sec-title reveal delay1">Dibangun untuk Operasional yang Terpercaya</h2>
+          <p class="sec-desc reveal delay2">
+            Operasional logistik membutuhkan sistem yang dapat diandalkan. LOGISTIQ membantu perusahaan mengelola akses pengguna, menjaga keteraturan data, memantau aktivitas, dan menjalankan proses operasional dalam satu platform yang terstruktur.
+          </p>
+
+          <div class="sec-cards">
+            <!-- Card 1 -->
+            <div class="sec-card reveal delay3">
+              <span class="sc-icon">🛡️</span>
+              <div>
+                <h4>Access Control</h4>
+                <p>Atur akses pengguna berdasarkan peran dan kebutuhan operasional.</p>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="sec-card reveal delay4">
+              <span class="sc-icon">🔒</span>
+              <div>
+                <h4>Data Protection</h4>
+                <p>Bantu menjaga data operasional tetap terorganisir dan terlindungi.</p>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="sec-card reveal delay5">
+              <span class="sc-icon">👁️</span>
+              <div>
+                <h4>Audit & Monitoring</h4>
+                <p>Pantau aktivitas dan perubahan data penting untuk meningkatkan transparansi.</p>
+              </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="sec-card reveal delay6">
+              <span class="sc-icon">✓</span>
+              <div>
+                <h4>Reliable Operations</h4>
+                <p>Dukung proses operasional harian dengan sistem yang terstruktur dan mudah dipantau.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sec-cta reveal delay7" style="margin-top: 40px;">
+            <a href="#contact" class="btn outline blue-text">Talk to Our Team →</a>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 </template>
-
 
 <style src="../assets/AppWhySecurity.css" scoped></style>

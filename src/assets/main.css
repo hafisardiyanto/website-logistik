@@ -157,10 +157,19 @@ textarea {
   transition-delay: 0.24s;
 }
 
+.delay4 {
+  transition-delay: 0.32s;
+}
+
+.delay5 {
+  transition-delay: 0.4s;
+}
+
 @media (max-width: 600px) {
   .section {
     padding: 65px 0;
   }
+
   .head h2,
   .dashboard-section h2,
   .about-copy h2,
@@ -172,7 +181,9 @@ textarea {
 /* Extracted from App.vue */
 .scroll-progress {
   position: fixed;
-  top: 0; left: 0; height: 2px;
+  top: 0;
+  left: 0;
+  height: 2px;
   background: var(--blue);
   z-index: 10000;
   transition: width 0.1s ease-out;

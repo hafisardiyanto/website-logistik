@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SeoPageTemplate from '../views/SeoPageTemplate.vue'
@@ -9,23 +8,31 @@ import AdminDashboard from '../views/admin/AdminDashboard.vue'
 import AdminLogin from '../views/admin/AdminLogin.vue'
 
 const routes = [
-  { path: '/', name: 'home', component: HomeView, meta: { title: 'LOGISTIQ | Platform Manajemen Logistik & Pengiriman', desc: 'LOGISTIQ adalah platform manajemen logistik dan pengiriman terintegrasi untuk mengelola customer, order, jadwal armada, tracking, invoice, biaya, dan profit.' } },
-  { path: '/aplikasi-pengiriman', component: SeoPageTemplate, meta: { title: 'Aplikasi Pengiriman Barang | LOGISTIQ', desc: 'LOGISTIQ adalah aplikasi pengiriman barang untuk mengelola customer, order, jadwal pengiriman, armada, tracking, invoice, biaya, dan profit dalam satu platform.' } },
-  { path: '/software-logistik', component: SeoPageTemplate, meta: { title: 'Software Manajemen Logistik | LOGISTIQ', desc: 'Kelola operasional logistik, customer, order, delivery, biaya, invoice, dan profitability dalam satu platform terintegrasi bersama LOGISTIQ.' } },
-  { path: '/software-trucking', component: SeoPageTemplate, meta: { title: 'Software Trucking & Manajemen Armada | LOGISTIQ', desc: 'Transportation Management System (TMS) untuk kebutuhan ekspedisi truk dan manajemen armada muatan Anda.' } },
-  { path: '/transportation', component: SeoPageTemplate, meta: { title: 'Transportation Management System | LOGISTIQ', desc: 'Atur jadwal kirim, lacak kendaraan, dan kelola invoice dalam satu pilar Transportasi LOGISTIQ.' } },
-  { path: '/freight-forwarding', component: SeoPageTemplate, meta: { title: 'Software Freight Forwarding | LOGISTIQ', desc: 'Sistem operasional menyeluruh untuk bisnis Freight Forwarding, ekspor, dan impor.' } },
-  { path: '/warehouse', component: SeoPageTemplate, meta: { title: 'Warehouse Management System | LOGISTIQ', desc: 'Pantau ketersediaan barang, tata letak logistik gudang, dan inbound/outbound material dengan mulus.' } },
-  { path: '/distribution', component: SeoPageTemplate, meta: { title: 'Software Distribusi & Last-Mile Delivery | LOGISTIQ', desc: 'Jangkau pelanggan dengan rute optimal dan bukti kirim elektronik (POD) di LOGISTIQ Distribusi.' } },
-  { path: '/features', component: SeoPageTemplate, meta: { title: 'Fitur Platform LOGISTIQ | LOGISTIQ', desc: 'Pelajari fitur dari lini Sales, Operations, Finance, dan Management.' } },
-  { path: '/pricing', component: SeoPageTemplate, meta: { title: 'Harga & Paket Langganan | LOGISTIQ', desc: 'Pilihan investasi berlangganan sistem SaaS LOGISTIQ yang sesuai untuk kebutuhan ragam ukuran bisnis.' } },
-  { path: '/about', component: SeoPageTemplate, meta: { title: 'Tentang LOGISTIQ | LOGISTIQ', desc: 'Kami membangun sistem operasi mutlak untuk memecahkan beban operasional rantai pasok Anda.' } },
-  { path: '/contact', component: SeoPageTemplate, meta: { title: 'Kontak LOGISTIQ | LOGISTIQ', desc: 'Hubungi tim ahli logistik kami untuk memulai uji coba demonstrasi (Request Demo) hari ini.' } },
-  { path: '/blog', component: SeoPageTemplate, meta: { title: 'Logistics Blog & Insights | LOGISTIQ', desc: 'Baca panduan ahli mengenai TMS, rasio laba logistik, dan pengelolaan supir truk.' } },
-  { path: '/privacy-policy', component: SeoPageTemplate, meta: { title: 'Privacy Policy | LOGISTIQ', desc: 'Kebijakan privasi bagaimana platform LOGISTIQ mengelola data berharga korporat Anda secara rahasia dan aman.' } },
-  { path: '/terms-of-service', component: SeoPageTemplate, meta: { title: 'Terms of Service | LOGISTIQ', desc: 'Syarat dan Ketentuan layanan perangkat lunak (SaaS) LOGISTIQ untuk operasi Anda.' } },
+  // 1. HUB HOMEPAGE
+  { path: '/', name: 'home', component: HomeView, meta: { title: 'LOGISTIQ — Software Manajemen Logistik & Platform Operasional', desc: 'LOGISTIQ adalah platform manajemen logistik untuk menghubungkan order, planning, dispatch, tracking, delivery, billing, fleet, warehouse, dan profitability dalam satu sistem.' } },
 
-  // Admin Routes
+  // 2. PLATFORM MODULES (Keyword targeting specific software functions)
+  { path: '/platform/order-management', component: SeoPageTemplate, meta: { title: 'Software Order Management Logistik | LOGISTIQ', desc: 'Kelola order masuk, pelanggan, dan penugasan secara terpusat dengan Software Order Management dari LOGISTIQ.' } },
+  { path: '/platform/transportation-management', component: SeoPageTemplate, meta: { title: 'Transportation Management System (TMS) | LOGISTIQ', desc: 'Sistem manajemen transportasi (TMS) untuk planning armada, tracking, dan operasional pengiriman tanpa batas.' } },
+  { path: '/platform/fleet-management', component: SeoPageTemplate, meta: { title: 'Fleet Management Software | LOGISTIQ', desc: 'Kelola jadwal kendaraan, konsumsi bahan bakar, dan kinerja pengemudi dengan platform manajemen armada (Fleet Management).' } },
+  { path: '/platform/warehouse-management', component: SeoPageTemplate, meta: { title: 'Warehouse Management System (WMS) | LOGISTIQ', desc: 'Sistem manajemen gudang (WMS) untuk tracking pergerakan barang, inbound, dan outbound logistics.' } },
+  { path: '/platform/tracking-pod', component: SeoPageTemplate, meta: { title: 'Software Tracking & Proof of Delivery | LOGISTIQ', desc: 'Lacak pengiriman dan terima bukti kirim (E-POD) secara real-time ke sistem utama Anda.' } },
+
+  // 3. SOLUTIONS (Keyword targeting industry niches)
+  { path: '/solutions/logistics-freight', component: SeoPageTemplate, meta: { title: 'Software Manajemen Logistik & Freight | LOGISTIQ', desc: 'Sistem logistik dan freight forwarding untuk perusahaan yang menginginkan skalabilitas tinggi dan kontrol maksimal.' } },
+  { path: '/solutions/trucking', component: SeoPageTemplate, meta: { title: 'Aplikasi Trucking & Manajemen Ekspedisi | LOGISTIQ', desc: 'Aplikasi operasional trucking dan manajemen ekspedisi muatan yang terintegrasi penuh dari order hingga invoice.' } },
+  { path: '/solutions/distribution', component: SeoPageTemplate, meta: { title: 'Software Manajemen Distribusi | LOGISTIQ', desc: 'Otomatisasi seluruh alur logistik bisnis distribusi ritel dan barang Anda hari ini dengan sistem LOGISTIQ.' } },
+  { path: '/solutions/warehouse', component: SeoPageTemplate, meta: { title: 'Sistem Manajemen Gudang & Penyimpanan | LOGISTIQ', desc: 'Kelola penyimpanan komersial skala besar dengan visibilitas inventaris real-time (WMS).' } },
+  { path: '/solutions/manufacturing', component: SeoPageTemplate, meta: { title: 'Software Logistik Industri Manufaktur | LOGISTIQ', desc: 'Hubungkan rantai pasok manufaktur dari pengelolaan bahan mentah hingga pengiriman ke titik distributor.' } },
+
+  // 4. RESOURCES & COMPANY PAGES
+  { path: '/integration', component: SeoPageTemplate, meta: { title: 'Integrasi Sistem Logistik (API & ERP) | LOGISTIQ', desc: 'Hubungkan LOGISTIQ dengan ekosistem bisnis dan ERP yang sudah Anda gunakan (SAP, Oracle, dsb).' } },
+  { path: '/security', component: SeoPageTemplate, meta: { title: 'Keamanan Data Operasional Logistik | LOGISTIQ', desc: 'Standar kemanan enterprise tinggi untuk melindungi kerahasiaan data ekspedisi perusahaan.' } },
+  { path: '/use-cases', component: SeoPageTemplate, meta: { title: 'Contoh Penggunaan Software Logistik | LOGISTIQ', desc: 'Simulasi penggunaan nyata platform LOGISTIQ dari order masuk hingga menjadi analisis profit.' } },
+  { path: '/faq', component: SeoPageTemplate, meta: { title: 'FAQ LOGISTIQ | LOGISTIQ', desc: 'Pertanyaan teknis dan populer seputar platform manajemen logistik kami.' } },
+  { path: '/request-demo', component: SeoPageTemplate, meta: { title: 'Dapatkan Demo LOGISTIQ | LOGISTIQ', desc: 'Hubungi konsultan kami untuk demonstrasi eksklusif software logistik modern hari ini.' } },
+
+  // 5. ADMIN BACKOFFICE (Intact)
   { path: '/admin/login', name: 'adminLogin', component: AdminLogin, meta: { title: 'Admin Login | LOGISTIQ', desc: 'CMS Login for Admin' } },
   {
     path: '/admin',
@@ -52,12 +59,11 @@ const router = createRouter({
   }
 })
 
-// Dynamic title, meta description & canonical
+// Dynamic title, meta description & SEO canonical injections
 router.beforeEach((to, from, next) => {
-  // 1. Title
   document.title = to.meta.title || 'LOGISTIQ';
 
-  // 2. Meta Description
+  // Update Meta Description dynamically
   let metaDesc = document.querySelector('meta[name="description"]');
   if (!metaDesc) {
     metaDesc = document.createElement('meta');
@@ -66,25 +72,21 @@ router.beforeEach((to, from, next) => {
   }
   metaDesc.setAttribute('content', to.meta.desc || '');
 
-  // 3. Canonical URL
+  // Update Canonical URL per page dynamic mapping
   let linkCanonical = document.querySelector('link[rel="canonical"]');
   if (!linkCanonical) {
     linkCanonical = document.createElement('link');
     linkCanonical.setAttribute('rel', 'canonical');
     document.head.appendChild(linkCanonical);
   }
-  // Construct production URL
   const pathPart = to.path === '/' ? '' : to.path;
   linkCanonical.setAttribute('href', 'https://logistiq.id' + pathPart);
 
-  // 4. Admin Guard
+  // Vue Authentication Guard for Admin CMS
   if (to.meta.requiresAuth) {
     const isAuthenticated = localStorage.getItem('adminAuth') === 'true';
-    if (!isAuthenticated) {
-      return next('/admin/login');
-    }
+    if (!isAuthenticated) return next('/admin/login');
   }
-
   next();
 })
 

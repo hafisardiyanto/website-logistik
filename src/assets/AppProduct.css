@@ -1,82 +1,190 @@
-.features {
+.modules {
+  padding: 100px 0;
+  background: white;
+}
+
+.mod-kicker {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #0f4c81;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.mod-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0b192c;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.mod-desc {
+  font-size: 18px;
+  color: #4b5e73;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+/* Mod List alternating layout */
+.mod-list {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-bottom: 80px;
+}
+
+.mod-item {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.mod-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.mod-visual {
+  flex: 1.2;
+}
+
+.mod-visual img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e1e7ec;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  /* shadow-lg */
+  transition: transform 0.3s;
+}
+
+.mod-visual img:hover {
+  transform: translateY(-5px);
+}
+
+.mod-content {
+  flex: 1;
+  text-align: left;
+}
+
+.mod-name {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f4c81;
+  background: #eef4fb;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.mod-content h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a192f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.mod-content p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.mod-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
-.feature {
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: white;
-  transition: 0.2s;
-}
-.feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 22px 35px #123d7008;
-  border-color: #c7daf4;
-}
-.icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: #edf5ff;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-}
-.feature h3 {
-  font-size: 19px;
-  margin: 16px 0 7px;
-  font-weight: 800;
-}
-.feature p {
+
+.mod-content li {
   font-size: 15px;
-  line-height: 1.7;
-  color: var(--muted);
-  margin: 0;
+  font-weight: 600;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-@media (max-width: 950px) {
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .features {
-    grid-template-columns: 1fr;
-  }
-}
-
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 50px;
-}
-.solution-card {
-  padding: 35px;
-  border: 1px solid var(--line);
-  background: white;
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-  border-color: #cbdcf0;
-}
-.icon {
-  font-size: 32px;
-}
-.learn-more {
-  display: inline-block;
-  margin-top: 20px;
-  color: var(--navy);
+.chk {
+  color: #12a875;
   font-weight: 800;
-  font-size: 14px;
 }
-.learn-more:hover { color: var(--blue); }
+
+.mod-cta {
+  margin-top: 100px;
+  padding-top: 60px;
+  border-top: 1px solid #e1e7ec;
+}
+
+.m-cta-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0a192f;
+  margin-bottom: 15px;
+}
+
+.m-cta-sub {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.btn.outline.blue-text {
+  color: #0f4c81;
+  border: 1px solid #0f4c81;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.btn.outline.blue-text:hover {
+  background: #0f4c81;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .mod-item {
+    gap: 40px;
+  }
+}
 
 @media (max-width: 768px) {
-  .solutions-grid { grid-template-columns: 1fr; }
+  .mod-list {
+    gap: 80px;
+  }
+
+  .mod-item,
+  .mod-item.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .mod-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .mod-content ul {
+    grid-template-columns: 1fr;
+  }
+
+  .mod-content h3 {
+    font-size: 26px;
+  }
 }

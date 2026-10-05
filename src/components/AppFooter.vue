@@ -1,60 +1,125 @@
 <template>
-  <footer class="footer">
-    <div class="container footer-grid">
+  <footer class="app-footer">
+    <div class="container container-lg">
       
-      <div class="foot-brand">
-        <div class="logo">
-          <span class="logo-mark">◆</span>
-          <span><b>LOGISTIQ</b></span>
+      <!-- Brand Top -->
+      <div class="footer-top">
+        <h3 class="footer-logo">LOGISTIQ</h3>
+        <span class="footer-tagline">Logistics Operations, Connected.</span>
+        <p class="footer-desc">
+          LOGISTIQ membantu perusahaan menghubungkan seluruh proses operasional logistik — dari order, planning, dispatch, tracking, delivery, billing, hingga profitability — dalam satu platform yang terintegrasi.
+        </p>
+      </div>
+
+      <!-- Links Grid Desktop -->
+      <div class="footer-grid d-desktop-grid">
+        <div class="fg-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#product">Order Management</a></li>
+            <li><a href="#product">Transportation Management</a></li>
+            <li><a href="#product">Fleet Management</a></li>
+            <li><a href="#product">Warehouse Management</a></li>
+            <li><a href="#product">Tracking & POD</a></li>
+            <li><a href="#product">Billing & Profitability</a></li>
+          </ul>
         </div>
-        <p>Sistem operasi logistik enterprise untuk perusahaan modern. Kelola order, tracking, biaya, dan tagihan dalam satu tempat.</p>
-        <div class="socials">
-          <span>in</span>
-          <span>fb</span>
-          <span>tw</span>
+        <div class="fg-links">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#industries">Logistics & Freight</a></li>
+            <li><a href="#industries">Trucking</a></li>
+            <li><a href="#industries">Distribution</a></li>
+            <li><a href="#industries">Warehouse</a></li>
+            <li><a href="#industries">Manufacturing</a></li>
+          </ul>
+        </div>
+        <div class="fg-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#home">About LOGISTIQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Request a Demo</a></li>
+          </ul>
+        </div>
+        <div class="fg-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#casestudies">Platform Overview</a></li>
+            <li><a href="#integrations">Integration</a></li>
+            <li><a href="#security">Security & Reliability</a></li>
+          </ul>
         </div>
       </div>
-      
-      <div class="foot-links">
-        <b>Product</b>
-        <a href="#product">Dashboard</a>
-        <a href="#product">Job Order</a>
-        <a href="#product">Delivery Order</a>
-        <a href="#product">Manifest</a>
-        <a href="#product">Tracking</a>
-        <a href="#pricing">Pricing</a>
+
+      <!-- Mobile Accordion Links -->
+      <div class="footer-mobile-links d-mobile-only">
+        <details class="m-acc">
+          <summary><span>Platform</span> <span class="acc-arr">+</span></summary>
+          <ul class="m-list">
+            <li><a href="#product">Order Management</a></li>
+            <li><a href="#product">Transportation Management</a></li>
+            <li><a href="#product">Fleet Management</a></li>
+            <li><a href="#product">Warehouse Management</a></li>
+            <li><a href="#product">Tracking & POD</a></li>
+            <li><a href="#product">Billing & Profitability</a></li>
+          </ul>
+        </details>
+        <details class="m-acc">
+          <summary><span>Solutions</span> <span class="acc-arr">+</span></summary>
+          <ul class="m-list">
+            <li><a href="#industries">Logistics & Freight</a></li>
+            <li><a href="#industries">Trucking</a></li>
+            <li><a href="#industries">Distribution</a></li>
+            <li><a href="#industries">Warehouse</a></li>
+            <li><a href="#industries">Manufacturing</a></li>
+          </ul>
+        </details>
+        <details class="m-acc">
+          <summary><span>Company</span> <span class="acc-arr">+</span></summary>
+          <ul class="m-list">
+            <li><a href="#home">About LOGISTIQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Request a Demo</a></li>
+          </ul>
+        </details>
+        <details class="m-acc">
+          <summary><span>Resources</span> <span class="acc-arr">+</span></summary>
+          <ul class="m-list">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#casestudies">Platform Overview</a></li>
+            <li><a href="#integrations">Integration</a></li>
+            <li><a href="#security">Security & Reliability</a></li>
+          </ul>
+        </details>
       </div>
-      
-      <div class="foot-links">
-        <b>Solutions</b>
-        <a href="#solusi">Trucking</a>
-        <a href="#solusi">3PL</a>
-        <a href="#solusi">Distribution</a>
-        <a href="#solusi">Warehouse</a>
+
+      <!-- Mini CTA -->
+      <div class="footer-cta">
+        <div class="fc-copy">
+          <h4>Ready to connect your operations?</h4>
+          <p>Diskusikan kebutuhan operasional perusahaan Anda bersama tim LOGISTIQ.</p>
+        </div>
+        <div class="fc-btn">
+          <a href="#contact" class="btn outline white-ghost">Request a Demo →</a>
+        </div>
       </div>
-      
-      <div class="foot-links">
-        <b>Company</b>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#faq">FAQ</a>
+
+      <!-- Copyright Bottom -->
+      <div class="footer-bottom">
+        <div class="fb-left">
+          &copy; {{ new Date().getFullYear() }} LOGISTIQ. All rights reserved.
+        </div>
+        <div class="fb-right">
+          <a href="javascript:void(0)">Privacy Policy</a>
+          <span class="sep">&middot;</span>
+          <a href="javascript:void(0)">Terms of Service</a>
+        </div>
       </div>
-      
-      <div class="foot-links">
-        <b>Resources</b>
-        <a href="#">Documentation</a>
-        <a href="#">API</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </div>
-      
-    </div>
-    
-    <div class="container foot-bottom">
-      <span>&copy; {{ new Date().getFullYear() }} LOGISTIQ Inc. All rights reserved.</span>
+
     </div>
   </footer>
 </template>
 
 <style src="../assets/AppFooter.css" scoped></style>
-
