@@ -73,11 +73,11 @@
 }
 
 .d-mobile-only {
-  display: none;
+  display: none !important;
 }
 
 .d-desktop-only {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 
@@ -87,7 +87,6 @@
   border: none;
   width: 30px;
   height: 22px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -104,6 +103,8 @@
 
 /* Mobile Menu */
 .mobile-menu {
+  display: none;
+  /* strictly hidden on desktop */
   position: absolute;
   top: 100%;
   left: 0;
@@ -171,10 +172,15 @@
 
 @media (max-width: 950px) {
   .d-desktop-only {
-    display: none;
+    display: none !important;
   }
 
   .d-mobile-only {
-    display: flex;
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    display: block;
+    /* Bring it back into flow/position for mobile */
   }
 }
